@@ -26,14 +26,14 @@ import { SendTransactionResult, TransactionToSign, SendTransactionFrom } from '@
 import { Algodv2, OnApplicationComplete, Transaction, TransactionWithSigner, AtomicTransactionComposer } from 'algosdk'
 export const APP_SPEC: AppSpec = {
   "hints": {
-    "doMath(uint64,uint64,string)uint64": {
-      "call_config": {
-        "no_op": "CALL"
-      }
-    },
-    "createApplication()void": {
+    "createApplication(uint64,address[5])void": {
       "call_config": {
         "no_op": "CREATE"
+      }
+    },
+    "updateApplication()void": {
+      "call_config": {
+        "update_application": "CALL"
       }
     }
   },
@@ -65,7 +65,7 @@ export const APP_SPEC: AppSpec = {
     }
   },
   "source": {
-    "approval": "I3ByYWdtYSB2ZXJzaW9uIDkKCi8vIFRoaXMgVEVBTCB3YXMgZ2VuZXJhdGVkIGJ5IFRFQUxTY3JpcHQgdjAuNDQuMAovLyBodHRwczovL2dpdGh1Yi5jb20vYWxnb3JhbmQtZGV2cmVsL1RFQUxTY3JpcHQKCi8vIFRoaXMgY29udHJhY3QgaXMgY29tcGxpYW50IHdpdGggYW5kL29yIGltcGxlbWVudHMgdGhlIGZvbGxvd2luZyBBUkNzOiBbIEFSQzQgXQoKLy8gVGhlIGZvbGxvd2luZyB0ZW4gbGluZXMgb2YgVEVBTCBoYW5kbGUgaW5pdGlhbCBwcm9ncmFtIGZsb3cKLy8gVGhpcyBwYXR0ZXJuIGlzIHVzZWQgdG8gbWFrZSBpdCBlYXN5IGZvciBhbnlvbmUgdG8gcGFyc2UgdGhlIHN0YXJ0IG9mIHRoZSBwcm9ncmFtIGFuZCBkZXRlcm1pbmUgaWYgYSBzcGVjaWZpYyBhY3Rpb24gaXMgYWxsb3dlZAovLyBIZXJlLCBhY3Rpb24gcmVmZXJzIHRvIHRoZSBPbkNvbXBsZXRlIGluIGNvbWJpbmF0aW9uIHdpdGggd2hldGhlciB0aGUgYXBwIGlzIGJlaW5nIGNyZWF0ZWQgb3IgY2FsbGVkCi8vIEV2ZXJ5IHBvc3NpYmxlIGFjdGlvbiBmb3IgdGhpcyBjb250cmFjdCBpcyByZXByZXNlbnRlZCBpbiB0aGUgc3dpdGNoIHN0YXRlbWVudAovLyBJZiB0aGUgYWN0aW9uIGlzIG5vdCBpbXBsbWVudGVkIGluIHRoZSBjb250cmFjdCwgaXRzIHJlcHNlY3RpdmUgYnJhbmNoIHdpbGwgYmUgIk5PVF9JTVBMTUVOVEVEIiB3aGljaCBqdXN0IGNvbnRhaW5zICJlcnIiCnR4biBBcHBsaWNhdGlvbklECmludCAwCj4KaW50IDYKKgp0eG4gT25Db21wbGV0aW9uCisKc3dpdGNoIGNyZWF0ZV9Ob09wIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgTk9UX0lNUExFTUVOVEVEIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgY2FsbF9Ob09wCgpOT1RfSU1QTEVNRU5URUQ6CgllcnIKCmdldFN1bToKCXByb3RvIDIgMQoKCS8vIGNvbnRyYWN0cy9taWdyYXRpb24uYWxnby50czoxMwoJLy8gcmV0dXJuIGEgKyBiOwoJZnJhbWVfZGlnIC0xIC8vIGE6IHVpbnQ2NAoJZnJhbWVfZGlnIC0yIC8vIGI6IHVpbnQ2NAoJKwoJcmV0c3ViCgpnZXREaWZmZXJlbmNlOgoJcHJvdG8gMiAxCgoJLy8gY29udHJhY3RzL21pZ3JhdGlvbi5hbGdvLnRzOjI0CgkvLyByZXR1cm4gYSA+PSBiID8gYSAtIGIgOiBiIC0gYTsKCWZyYW1lX2RpZyAtMSAvLyBhOiB1aW50NjQKCWZyYW1lX2RpZyAtMiAvLyBiOiB1aW50NjQKCT49CglieiB0ZXJuYXJ5MF9mYWxzZQoJZnJhbWVfZGlnIC0xIC8vIGE6IHVpbnQ2NAoJZnJhbWVfZGlnIC0yIC8vIGI6IHVpbnQ2NAoJLQoJYiB0ZXJuYXJ5MF9lbmQKCnRlcm5hcnkwX2ZhbHNlOgoJZnJhbWVfZGlnIC0yIC8vIGI6IHVpbnQ2NAoJZnJhbWVfZGlnIC0xIC8vIGE6IHVpbnQ2NAoJLQoKdGVybmFyeTBfZW5kOgoJcmV0c3ViCgovLyBkb01hdGgoc3RyaW5nLHVpbnQ2NCx1aW50NjQpdWludDY0Ci8vCi8vIEEgbWV0aG9kIHRoYXQgdGFrZXMgdHdvIG51bWJlcnMgYW5kIGRvZXMgZWl0aGVyIGFkZGl0aW9uIG9yIHN1YnRyYWN0aW9uCi8vIAovLyBAcGFyYW0gYSBUaGUgZmlyc3QgbnVtYmVyCi8vIEBwYXJhbSBiIFRoZSBzZWNvbmQgbnVtYmVyCi8vIEBwYXJhbSBvcGVyYXRpb24gVGhlIG9wZXJhdGlvbiB0byBwZXJmb3JtLiBDYW4gYmUgZWl0aGVyICdzdW0nIG9yICdkaWZmZXJlbmNlJwovLyAKLy8gQHJldHVybnMgVGhlIHJlc3VsdCBvZiB0aGUgb3BlcmF0aW9uCmFiaV9yb3V0ZV9kb01hdGg6CglieXRlIDB4IC8vIHB1c2ggZW1wdHkgYnl0ZXMgdG8gZmlsbCB0aGUgc3RhY2sgZnJhbWUgZm9yIHRoaXMgc3Vicm91dGluZSdzIGxvY2FsIHZhcmlhYmxlcwoKCS8vIG9wZXJhdGlvbjogc3RyaW5nCgl0eG5hIEFwcGxpY2F0aW9uQXJncyAzCglleHRyYWN0IDIgMAoKCS8vIGI6IHVpbnQ2NAoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMgoJYnRvaQoKCS8vIGE6IHVpbnQ2NAoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQoJYnRvaQoKCS8vIGV4ZWN1dGUgZG9NYXRoKHN0cmluZyx1aW50NjQsdWludDY0KXVpbnQ2NAoJY2FsbHN1YiBkb01hdGgKCWludCAxCglyZXR1cm4KCmRvTWF0aDoKCXByb3RvIDQgMAoKCS8vIGlmMF9jb25kaXRpb24KCS8vIGNvbnRyYWN0cy9taWdyYXRpb24uYWxnby50czozOQoJLy8gb3BlcmF0aW9uID09PSAnc3VtJwoJZnJhbWVfZGlnIC0zIC8vIG9wZXJhdGlvbjogYnl0ZXMKCWJ5dGUgInN1bSIKCT09CglieiBpZjBfZWxzZWlmMV9jb25kaXRpb24KCgkvLyBpZjBfY29uc2VxdWVudAoJLy8gY29udHJhY3RzL21pZ3JhdGlvbi5hbGdvLnRzOjQwCgkvLyByZXN1bHQgPSB0aGlzLmdldFN1bShhLCBiKQoJZnJhbWVfZGlnIC0yIC8vIGI6IHVpbnQ2NAoJZnJhbWVfZGlnIC0xIC8vIGE6IHVpbnQ2NAoJY2FsbHN1YiBnZXRTdW0KCWZyYW1lX2J1cnkgLTQgLy8gcmVzdWx0OiB1aW50NjQKCWIgaWYwX2VuZAoKaWYwX2Vsc2VpZjFfY29uZGl0aW9uOgoJLy8gY29udHJhY3RzL21pZ3JhdGlvbi5hbGdvLnRzOjQxCgkvLyBvcGVyYXRpb24gPT09ICdkaWZmZXJlbmNlJwoJZnJhbWVfZGlnIC0zIC8vIG9wZXJhdGlvbjogYnl0ZXMKCWJ5dGUgImRpZmZlcmVuY2UiCgk9PQoJYnogaWYwX2Vsc2UKCgkvLyBpZjBfZWxzZWlmMV9jb25zZXF1ZW50CgkvLyBjb250cmFjdHMvbWlncmF0aW9uLmFsZ28udHM6NDIKCS8vIHJlc3VsdCA9IHRoaXMuZ2V0RGlmZmVyZW5jZShhLCBiKQoJZnJhbWVfZGlnIC0yIC8vIGI6IHVpbnQ2NAoJZnJhbWVfZGlnIC0xIC8vIGE6IHVpbnQ2NAoJY2FsbHN1YiBnZXREaWZmZXJlbmNlCglmcmFtZV9idXJ5IC00IC8vIHJlc3VsdDogdWludDY0CgliIGlmMF9lbmQKCmlmMF9lbHNlOgoJZXJyIC8vICdJbnZhbGlkIG9wZXJhdGlvbicKCmlmMF9lbmQ6CgkvLyBjb250cmFjdHMvbWlncmF0aW9uLmFsZ28udHM6NDUKCS8vIHJldHVybiByZXN1bHQ7CglmcmFtZV9kaWcgLTQgLy8gcmVzdWx0OiB1aW50NjQKCWl0b2IKCWJ5dGUgMHgxNTFmN2M3NQoJc3dhcAoJY29uY2F0Cglsb2cKCXJldHN1YgoKYWJpX3JvdXRlX2NyZWF0ZUFwcGxpY2F0aW9uOgoJaW50IDEKCXJldHVybgoKY3JlYXRlX05vT3A6CgltZXRob2QgImNyZWF0ZUFwcGxpY2F0aW9uKCl2b2lkIgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMAoJbWF0Y2ggYWJpX3JvdXRlX2NyZWF0ZUFwcGxpY2F0aW9uCgllcnIKCmNhbGxfTm9PcDoKCW1ldGhvZCAiZG9NYXRoKHVpbnQ2NCx1aW50NjQsc3RyaW5nKXVpbnQ2NCIKCXR4bmEgQXBwbGljYXRpb25BcmdzIDAKCW1hdGNoIGFiaV9yb3V0ZV9kb01hdGgKCWVycg==",
+    "approval": "I3ByYWdtYSB2ZXJzaW9uIDkKCi8vIFRoaXMgVEVBTCB3YXMgZ2VuZXJhdGVkIGJ5IFRFQUxTY3JpcHQgdjAuNDcuMAovLyBodHRwczovL2dpdGh1Yi5jb20vYWxnb3JhbmQtZGV2cmVsL1RFQUxTY3JpcHQKCi8vIFRoaXMgY29udHJhY3QgaXMgY29tcGxpYW50IHdpdGggYW5kL29yIGltcGxlbWVudHMgdGhlIGZvbGxvd2luZyBBUkNzOiBbIEFSQzQgXQoKLy8gVGhlIGZvbGxvd2luZyB0ZW4gbGluZXMgb2YgVEVBTCBoYW5kbGUgaW5pdGlhbCBwcm9ncmFtIGZsb3cKLy8gVGhpcyBwYXR0ZXJuIGlzIHVzZWQgdG8gbWFrZSBpdCBlYXN5IGZvciBhbnlvbmUgdG8gcGFyc2UgdGhlIHN0YXJ0IG9mIHRoZSBwcm9ncmFtIGFuZCBkZXRlcm1pbmUgaWYgYSBzcGVjaWZpYyBhY3Rpb24gaXMgYWxsb3dlZAovLyBIZXJlLCBhY3Rpb24gcmVmZXJzIHRvIHRoZSBPbkNvbXBsZXRlIGluIGNvbWJpbmF0aW9uIHdpdGggd2hldGhlciB0aGUgYXBwIGlzIGJlaW5nIGNyZWF0ZWQgb3IgY2FsbGVkCi8vIEV2ZXJ5IHBvc3NpYmxlIGFjdGlvbiBmb3IgdGhpcyBjb250cmFjdCBpcyByZXByZXNlbnRlZCBpbiB0aGUgc3dpdGNoIHN0YXRlbWVudAovLyBJZiB0aGUgYWN0aW9uIGlzIG5vdCBpbXBsbWVudGVkIGluIHRoZSBjb250cmFjdCwgaXRzIHJlcHNlY3RpdmUgYnJhbmNoIHdpbGwgYmUgIk5PVF9JTVBMTUVOVEVEIiB3aGljaCBqdXN0IGNvbnRhaW5zICJlcnIiCnR4biBBcHBsaWNhdGlvbklECmludCAwCj4KaW50IDYKKgp0eG4gT25Db21wbGV0aW9uCisKc3dpdGNoIGNyZWF0ZV9Ob09wIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgTk9UX0lNUExFTUVOVEVEIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgTk9UX0lNUExFTUVOVEVEIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgTk9UX0lNUExFTUVOVEVEIGNhbGxfVXBkYXRlQXBwbGljYXRpb24KCk5PVF9JTVBMRU1FTlRFRDoKCWVycgoKLy8gY3JlYXRlQXBwbGljYXRpb24oYWRkcmVzc1s1XSx1aW50NjQpdm9pZAphYmlfcm91dGVfY3JlYXRlQXBwbGljYXRpb246CgkvLyBwYXJ0aWNpcGFudHM6IGFkZHJlc3NbNV0KCXR4bmEgQXBwbGljYXRpb25BcmdzIDIKCgkvLyB2ZXJzaW9uOiB1aW50NjQKCXR4bmEgQXBwbGljYXRpb25BcmdzIDEKCWJ0b2kKCgkvLyBleGVjdXRlIGNyZWF0ZUFwcGxpY2F0aW9uKGFkZHJlc3NbNV0sdWludDY0KXZvaWQKCWNhbGxzdWIgY3JlYXRlQXBwbGljYXRpb24KCWludCAxCglyZXR1cm4KCmNyZWF0ZUFwcGxpY2F0aW9uOgoJcHJvdG8gMiAwCgoJLy8gY29udHJhY3RzL21pZ3JhdGlvbi5hbGdvLnRzOjExCgkvLyBhc3NlcnQoc2hhNTEyXzI1NigKCS8vICAgICAgICdNdWx0aXNpZ0FkZHInCgkvLyAgICAgICArIGV4dHJhY3QzKGl0b2IodmVyc2lvbiksIDcsIDEpCgkvLyAgICAgICArIGV4dHJhY3QzKGl0b2IoMyksIDcsIDEpCgkvLyAgICAgICArIHJhd0J5dGVzKHBhcnRpY2lwYW50c1swXSkKCS8vICAgICAgICsgcmF3Qnl0ZXMocGFydGljaXBhbnRzWzFdKQoJLy8gICAgICAgKyByYXdCeXRlcyhwYXJ0aWNpcGFudHNbMl0pCgkvLyAgICAgICArIHJhd0J5dGVzKHBhcnRpY2lwYW50c1szXSkKCS8vICAgICAgICsgcmF3Qnl0ZXMocGFydGljaXBhbnRzWzRdKSwKCS8vICAgICApID09PSBjYXN0Qnl0ZXM8Ynl0ZVszMl0+KHRoaXMudHhuLnNlbmRlcikpCglieXRlICJNdWx0aXNpZ0FkZHIiCglmcmFtZV9kaWcgLTEgLy8gdmVyc2lvbjogdWludDY0CglpdG9iCglpbnQgNwoJaW50IDEKCWV4dHJhY3QzCgljb25jYXQKCWJ5dGUgMHgwMDAwMDAwMDAwMDAwMDAzCglpbnQgNwoJaW50IDEKCWV4dHJhY3QzCgljb25jYXQKCWZyYW1lX2RpZyAtMiAvLyBwYXJ0aWNpcGFudHM6IGFkZHJlc3NbNV0KCWV4dHJhY3QgMCAzMgoJY29uY2F0CglmcmFtZV9kaWcgLTIgLy8gcGFydGljaXBhbnRzOiBhZGRyZXNzWzVdCglleHRyYWN0IDMyIDMyCgljb25jYXQKCWZyYW1lX2RpZyAtMiAvLyBwYXJ0aWNpcGFudHM6IGFkZHJlc3NbNV0KCWV4dHJhY3QgNjQgMzIKCWNvbmNhdAoJZnJhbWVfZGlnIC0yIC8vIHBhcnRpY2lwYW50czogYWRkcmVzc1s1XQoJZXh0cmFjdCA5NiAzMgoJY29uY2F0CglmcmFtZV9kaWcgLTIgLy8gcGFydGljaXBhbnRzOiBhZGRyZXNzWzVdCglleHRyYWN0IDEyOCAzMgoJY29uY2F0CglzaGE1MTJfMjU2Cgl0eG4gU2VuZGVyCgk9PQoJYXNzZXJ0CglyZXRzdWIKCi8vIHVwZGF0ZUFwcGxpY2F0aW9uKCl2b2lkCmFiaV9yb3V0ZV91cGRhdGVBcHBsaWNhdGlvbjoKCS8vIGV4ZWN1dGUgdXBkYXRlQXBwbGljYXRpb24oKXZvaWQKCWNhbGxzdWIgdXBkYXRlQXBwbGljYXRpb24KCWludCAxCglyZXR1cm4KCnVwZGF0ZUFwcGxpY2F0aW9uOgoJcHJvdG8gMCAwCgoJLy8gY29udHJhY3RzL21pZ3JhdGlvbi5hbGdvLnRzOjI0CgkvLyBhc3NlcnQodGhpcy50eG4uc2VuZGVyID09PSB0aGlzLmFwcC5jcmVhdG9yKQoJdHhuIFNlbmRlcgoJdHhuYSBBcHBsaWNhdGlvbnMgMAoJYXBwX3BhcmFtc19nZXQgQXBwQ3JlYXRvcgoJYXNzZXJ0Cgk9PQoJYXNzZXJ0CglyZXRzdWIKCmNyZWF0ZV9Ob09wOgoJbWV0aG9kICJjcmVhdGVBcHBsaWNhdGlvbih1aW50NjQsYWRkcmVzc1s1XSl2b2lkIgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMAoJbWF0Y2ggYWJpX3JvdXRlX2NyZWF0ZUFwcGxpY2F0aW9uCgllcnIKCmNhbGxfVXBkYXRlQXBwbGljYXRpb246CgltZXRob2QgInVwZGF0ZUFwcGxpY2F0aW9uKCl2b2lkIgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMAoJbWF0Y2ggYWJpX3JvdXRlX3VwZGF0ZUFwcGxpY2F0aW9uCgllcnI=",
     "clear": "I3ByYWdtYSB2ZXJzaW9uIDkKaW50IDE="
   },
   "contract": {
@@ -73,38 +73,33 @@ export const APP_SPEC: AppSpec = {
     "desc": "",
     "methods": [
       {
-        "name": "doMath",
+        "name": "createApplication",
         "args": [
           {
-            "name": "a",
+            "name": "version",
             "type": "uint64",
-            "desc": "The first number"
+            "desc": ""
           },
           {
-            "name": "b",
-            "type": "uint64",
-            "desc": "The second number"
-          },
-          {
-            "name": "operation",
-            "type": "string",
-            "desc": "The operation to perform. Can be either 'sum' or 'difference'"
+            "name": "participants",
+            "type": "address[5]",
+            "desc": ""
           }
         ],
-        "desc": "A method that takes two numbers and does either addition or subtraction",
-        "returns": {
-          "type": "uint64",
-          "desc": "The result of the operation"
-        }
-      },
-      {
-        "name": "createApplication",
         "desc": "",
         "returns": {
           "type": "void",
           "desc": ""
-        },
-        "args": []
+        }
+      },
+      {
+        "name": "updateApplication",
+        "args": [],
+        "desc": "",
+        "returns": {
+          "type": "void",
+          "desc": ""
+        }
       }
     ]
   }
@@ -165,28 +160,15 @@ export type Migration = {
    * Maps method signatures / names to their argument and return types.
    */
   methods:
-    & Record<'doMath(uint64,uint64,string)uint64' | 'doMath', {
+    & Record<'createApplication(uint64,address[5])void' | 'createApplication', {
       argsObj: {
-        /**
-         * The first number
-         */
-        a: bigint | number
-        /**
-         * The second number
-         */
-        b: bigint | number
-        /**
-         * The operation to perform. Can be either 'sum' or 'difference'
-         */
-        operation: string
+        version: bigint | number
+        participants: [string, string, string, string, string]
       }
-      argsTuple: [a: bigint | number, b: bigint | number, operation: string]
-      /**
-       * The result of the operation
-       */
-      returns: bigint
+      argsTuple: [version: bigint | number, participants: [string, string, string, string, string]]
+      returns: void
     }>
-    & Record<'createApplication()void' | 'createApplication', {
+    & Record<'updateApplication()void' | 'updateApplication', {
       argsObj: {
       }
       argsTuple: []
@@ -225,7 +207,16 @@ export type MigrationCreateCalls = (typeof MigrationCallFactory)['create']
  * Defines supported create methods for this smart contract
  */
 export type MigrationCreateCallParams =
-  | (TypedCallParams<'createApplication()void'> & (OnCompleteNoOp))
+  | (TypedCallParams<'createApplication(uint64,address[5])void'> & (OnCompleteNoOp))
+/**
+ * A factory for available 'update' calls
+ */
+export type MigrationUpdateCalls = (typeof MigrationCallFactory)['update']
+/**
+ * Defines supported update methods for this smart contract
+ */
+export type MigrationUpdateCallParams =
+  | TypedCallParams<'updateApplication()void'>
 /**
  * Defines arguments required for the deploy method.
  */
@@ -235,6 +226,10 @@ export type MigrationDeployArgs = {
    * A delegate which takes a create call factory and returns the create call params for this smart contract
    */
   createCall?: (callFactory: MigrationCreateCalls) => MigrationCreateCallParams
+  /**
+   * A delegate which takes a update call factory and returns the update call params for this smart contract
+   */
+  updateCall?: (callFactory: MigrationUpdateCalls) => MigrationUpdateCallParams
 }
 
 
@@ -248,16 +243,16 @@ export abstract class MigrationCallFactory {
   static get create() {
     return {
       /**
-       * Constructs a create call for the Migration smart contract using the createApplication()void ABI method
+       * Constructs a create call for the Migration smart contract using the createApplication(uint64,address[5])void ABI method
        *
        * @param args Any args for the contract call
        * @param params Any additional parameters for the call
        * @returns A TypedCallParams object for the call
        */
-      createApplication(args: MethodArgs<'createApplication()void'>, params: AppClientCallCoreParams & CoreAppCallArgs & AppClientCompilationParams & (OnCompleteNoOp) = {}) {
+      createApplication(args: MethodArgs<'createApplication(uint64,address[5])void'>, params: AppClientCallCoreParams & CoreAppCallArgs & AppClientCompilationParams & (OnCompleteNoOp) = {}) {
         return {
-          method: 'createApplication()void' as const,
-          methodArgs: Array.isArray(args) ? args : [],
+          method: 'createApplication(uint64,address[5])void' as const,
+          methodArgs: Array.isArray(args) ? args : [args.version, args.participants],
           ...params,
         }
       },
@@ -265,21 +260,27 @@ export abstract class MigrationCallFactory {
   }
 
   /**
-   * Constructs a no op call for the doMath(uint64,uint64,string)uint64 ABI method
-   *
-   * A method that takes two numbers and does either addition or subtraction
-   *
-   * @param args Any args for the contract call
-   * @param params Any additional parameters for the call
-   * @returns A TypedCallParams object for the call
+   * Gets available update call factories
    */
-  static doMath(args: MethodArgs<'doMath(uint64,uint64,string)uint64'>, params: AppClientCallCoreParams & CoreAppCallArgs) {
+  static get update() {
     return {
-      method: 'doMath(uint64,uint64,string)uint64' as const,
-      methodArgs: Array.isArray(args) ? args : [args.a, args.b, args.operation],
-      ...params,
+      /**
+       * Constructs an update call for the Migration smart contract using the updateApplication()void ABI method
+       *
+       * @param args Any args for the contract call
+       * @param params Any additional parameters for the call
+       * @returns A TypedCallParams object for the call
+       */
+      updateApplication(args: MethodArgs<'updateApplication()void'>, params: AppClientCallCoreParams & CoreAppCallArgs & AppClientCompilationParams = {}) {
+        return {
+          method: 'updateApplication()void' as const,
+          methodArgs: Array.isArray(args) ? args : [],
+          ...params,
+        }
+      },
     }
   }
+
 }
 
 /**
@@ -343,8 +344,10 @@ export class MigrationClient {
    */
   public deploy(params: MigrationDeployArgs & AppClientDeployCoreParams = {}): ReturnType<ApplicationClient['deploy']> {
     const createArgs = params.createCall?.(MigrationCallFactory.create)
+    const updateArgs = params.updateCall?.(MigrationCallFactory.update)
     return this.appClient.deploy({
       ...params,
+      updateArgs,
       createArgs,
       createOnCompleteAction: createArgs?.onCompleteAction,
     })
@@ -357,14 +360,33 @@ export class MigrationClient {
     const $this = this
     return {
       /**
-       * Creates a new instance of the Migration smart contract using the createApplication()void ABI method.
+       * Creates a new instance of the Migration smart contract using the createApplication(uint64,address[5])void ABI method.
        *
        * @param args The arguments for the smart contract call
        * @param params Any additional parameters for the call
        * @returns The create result
        */
-      async createApplication(args: MethodArgs<'createApplication()void'>, params: AppClientCallCoreParams & AppClientCompilationParams & (OnCompleteNoOp) = {}): Promise<AppCallTransactionResultOfType<MethodReturn<'createApplication()void'>>> {
+      async createApplication(args: MethodArgs<'createApplication(uint64,address[5])void'>, params: AppClientCallCoreParams & AppClientCompilationParams & (OnCompleteNoOp) = {}): Promise<AppCallTransactionResultOfType<MethodReturn<'createApplication(uint64,address[5])void'>>> {
         return $this.mapReturnValue(await $this.appClient.create(MigrationCallFactory.create.createApplication(args, params)))
+      },
+    }
+  }
+
+  /**
+   * Gets available update methods
+   */
+  public get update() {
+    const $this = this
+    return {
+      /**
+       * Updates an existing instance of the Migration smart contract using the updateApplication()void ABI method.
+       *
+       * @param args The arguments for the smart contract call
+       * @param params Any additional parameters for the call
+       * @returns The update result
+       */
+      async updateApplication(args: MethodArgs<'updateApplication()void'>, params: AppClientCallCoreParams & AppClientCompilationParams = {}): Promise<AppCallTransactionResultOfType<MethodReturn<'updateApplication()void'>>> {
+        return $this.mapReturnValue(await $this.appClient.update(MigrationCallFactory.update.updateApplication(args, params)))
       },
     }
   }
@@ -379,29 +401,21 @@ export class MigrationClient {
     return this.appClient.clearState(args)
   }
 
-  /**
-   * Calls the doMath(uint64,uint64,string)uint64 ABI method.
-   *
-   * A method that takes two numbers and does either addition or subtraction
-   *
-   * @param args The arguments for the contract call
-   * @param params Any additional parameters for the call
-   * @returns The result of the call: The result of the operation
-   */
-  public doMath(args: MethodArgs<'doMath(uint64,uint64,string)uint64'>, params: AppClientCallCoreParams & CoreAppCallArgs = {}) {
-    return this.call(MigrationCallFactory.doMath(args, params))
-  }
-
   public compose(): MigrationComposer {
     const client = this
     const atc = new AtomicTransactionComposer()
     let promiseChain:Promise<unknown> = Promise.resolve()
     const resultMappers: Array<undefined | ((x: any) => any)> = []
     return {
-      doMath(args: MethodArgs<'doMath(uint64,uint64,string)uint64'>, params?: AppClientCallCoreParams & CoreAppCallArgs) {
-        promiseChain = promiseChain.then(() => client.doMath(args, {...params, sendParams: {...params?.sendParams, skipSending: true, atc}}))
-        resultMappers.push(undefined)
-        return this
+      get update() {
+        const $this = this
+        return {
+          updateApplication(args: MethodArgs<'updateApplication()void'>, params?: AppClientCallCoreParams & AppClientCompilationParams) {
+            promiseChain = promiseChain.then(() => client.update.updateApplication(args, {...params, sendParams: {...params?.sendParams, skipSending: true, atc}}))
+            resultMappers.push(undefined)
+            return $this
+          },
+        }
       },
       clearState(args?: BareCallArgs & AppClientCallCoreParams & CoreAppCallArgs) {
         promiseChain = promiseChain.then(() => client.clearState({...args, sendParams: {...args?.sendParams, skipSending: true, atc}}))
@@ -429,15 +443,18 @@ export class MigrationClient {
 }
 export type MigrationComposer<TReturns extends [...any[]] = []> = {
   /**
-   * Calls the doMath(uint64,uint64,string)uint64 ABI method.
-   *
-   * A method that takes two numbers and does either addition or subtraction
-   *
-   * @param args The arguments for the contract call
-   * @param params Any additional parameters for the call
-   * @returns The typed transaction composer so you can fluently chain multiple calls or call execute to execute all queued up transactions
+   * Gets available update methods
    */
-  doMath(args: MethodArgs<'doMath(uint64,uint64,string)uint64'>, params?: AppClientCallCoreParams & CoreAppCallArgs): MigrationComposer<[...TReturns, MethodReturn<'doMath(uint64,uint64,string)uint64'>]>
+  readonly update: {
+    /**
+     * Updates an existing instance of the Migration smart contract using the updateApplication()void ABI method.
+     *
+     * @param args The arguments for the smart contract call
+     * @param params Any additional parameters for the call
+     * @returns The typed transaction composer so you can fluently chain multiple calls or call execute to execute all queued up transactions
+     */
+    updateApplication(args: MethodArgs<'updateApplication()void'>, params?: AppClientCallCoreParams & AppClientCompilationParams): MigrationComposer<[...TReturns, MethodReturn<'updateApplication()void'>]>
+  }
 
   /**
    * Makes a clear_state call to an existing instance of the Migration smart contract.

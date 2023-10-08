@@ -3,38 +3,33 @@
   "desc": "",
   "methods": [
     {
-      "name": "doMath",
+      "name": "createApplication",
       "args": [
         {
-          "name": "a",
+          "name": "version",
           "type": "uint64",
-          "desc": "The first number"
+          "desc": ""
         },
         {
-          "name": "b",
-          "type": "uint64",
-          "desc": "The second number"
-        },
-        {
-          "name": "operation",
-          "type": "string",
-          "desc": "The operation to perform. Can be either 'sum' or 'difference'"
+          "name": "participants",
+          "type": "address[5]",
+          "desc": ""
         }
       ],
-      "desc": "A method that takes two numbers and does either addition or subtraction",
-      "returns": {
-        "type": "uint64",
-        "desc": "The result of the operation"
-      }
-    },
-    {
-      "name": "createApplication",
       "desc": "",
       "returns": {
         "type": "void",
         "desc": ""
-      },
-      "args": []
+      }
+    },
+    {
+      "name": "updateApplication",
+      "args": [],
+      "desc": "",
+      "returns": {
+        "type": "void",
+        "desc": ""
+      }
     }
   ]
 }
