@@ -1,0 +1,55 @@
+{
+  "name": "Migration",
+  "desc": "",
+  "methods": [
+    {
+      "name": "migrateGlobalInt",
+      "args": [
+        {
+          "name": "key",
+          "type": "byte[]",
+          "desc": ""
+        },
+        {
+          "name": "value",
+          "type": "uint64",
+          "desc": ""
+        }
+      ],
+      "desc": "",
+      "returns": {
+        "type": "void",
+        "desc": ""
+      }
+    },
+    {
+      "name": "migrateGlobalBytes",
+      "args": [
+        {
+          "name": "key",
+          "type": "uint64",
+          "desc": ""
+        },
+        {
+          "name": "value",
+          "type": "byte[]",
+          "desc": ""
+        }
+      ],
+      "desc": "",
+      "returns": {
+        "type": "void",
+        "desc": ""
+      }
+    },
+    {
+      "name": "createApplication",
+      "desc": "",
+      "returns": {
+        "type": "void",
+        "desc": ""
+      },
+      "args": []
+    }
+  ]
+}
