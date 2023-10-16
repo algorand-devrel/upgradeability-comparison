@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "generate-client": "algokitgen generate -a contracts/artifacts/Migration.json -o contracts/clients/MigrationClient.ts",
-    "compile-contract": "tealscript contracts/migration.algo.ts contracts/artifacts",
-    "generate-components": "algokit-generate-component contracts/artifacts/Migration.json contracts/artifacts/components",
+    "generate-client": "algokitgen generate -a contracts/artifacts/MsigCheck.json -o contracts/clients/MsigCheckClient.ts",
+    "compile-contract": "tealscript contracts/msig-check.algo.ts contracts/artifacts",
+    "generate-components": "algokit-generate-component contracts/artifacts/MsigCheck.json contracts/artifacts/components",
     "build": "npm run compile-contract && npm run generate-client",
     "test": "npm run build && jest",
     "lint": "eslint . --ext .ts",

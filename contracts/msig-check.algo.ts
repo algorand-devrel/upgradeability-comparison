@@ -1,7 +1,7 @@
 import { Contract } from '@algorandfoundation/tealscript';
 
 // eslint-disable-next-line no-unused-vars
-class Migration extends Contract {
+class MsigCheck extends Contract {
   createApplication(
     version: number,
     participants: StaticArray<Address, 5>,

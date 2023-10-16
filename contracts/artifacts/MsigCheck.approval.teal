@@ -39,7 +39,7 @@ abi_route_createApplication:
 createApplication:
 	proto 2 0
 
-	// contracts/migration.algo.ts:11
+	// contracts/msig-check.algo.ts:11
 	// assert(sha512_256(
 	//       'MultisigAddr'
 	//       + extract3(itob(version), 7, 1)
@@ -93,7 +93,7 @@ abi_route_updateApplication:
 updateApplication:
 	proto 0 0
 
-	// contracts/migration.algo.ts:24
+	// contracts/msig-check.algo.ts:24
 	// assert(this.txn.sender === this.app.creator)
 	txn Sender
 	txna Applications 0

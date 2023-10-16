@@ -65,11 +65,11 @@ export const APP_SPEC: AppSpec = {
     }
   },
   "source": {
-    "approval": "I3ByYWdtYSB2ZXJzaW9uIDkKCi8vIFRoaXMgVEVBTCB3YXMgZ2VuZXJhdGVkIGJ5IFRFQUxTY3JpcHQgdjAuNDcuMAovLyBodHRwczovL2dpdGh1Yi5jb20vYWxnb3JhbmQtZGV2cmVsL1RFQUxTY3JpcHQKCi8vIFRoaXMgY29udHJhY3QgaXMgY29tcGxpYW50IHdpdGggYW5kL29yIGltcGxlbWVudHMgdGhlIGZvbGxvd2luZyBBUkNzOiBbIEFSQzQgXQoKLy8gVGhlIGZvbGxvd2luZyB0ZW4gbGluZXMgb2YgVEVBTCBoYW5kbGUgaW5pdGlhbCBwcm9ncmFtIGZsb3cKLy8gVGhpcyBwYXR0ZXJuIGlzIHVzZWQgdG8gbWFrZSBpdCBlYXN5IGZvciBhbnlvbmUgdG8gcGFyc2UgdGhlIHN0YXJ0IG9mIHRoZSBwcm9ncmFtIGFuZCBkZXRlcm1pbmUgaWYgYSBzcGVjaWZpYyBhY3Rpb24gaXMgYWxsb3dlZAovLyBIZXJlLCBhY3Rpb24gcmVmZXJzIHRvIHRoZSBPbkNvbXBsZXRlIGluIGNvbWJpbmF0aW9uIHdpdGggd2hldGhlciB0aGUgYXBwIGlzIGJlaW5nIGNyZWF0ZWQgb3IgY2FsbGVkCi8vIEV2ZXJ5IHBvc3NpYmxlIGFjdGlvbiBmb3IgdGhpcyBjb250cmFjdCBpcyByZXByZXNlbnRlZCBpbiB0aGUgc3dpdGNoIHN0YXRlbWVudAovLyBJZiB0aGUgYWN0aW9uIGlzIG5vdCBpbXBsbWVudGVkIGluIHRoZSBjb250cmFjdCwgaXRzIHJlcHNlY3RpdmUgYnJhbmNoIHdpbGwgYmUgIk5PVF9JTVBMTUVOVEVEIiB3aGljaCBqdXN0IGNvbnRhaW5zICJlcnIiCnR4biBBcHBsaWNhdGlvbklECmludCAwCj4KaW50IDYKKgp0eG4gT25Db21wbGV0aW9uCisKc3dpdGNoIGNyZWF0ZV9Ob09wIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgTk9UX0lNUExFTUVOVEVEIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgTk9UX0lNUExFTUVOVEVEIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgTk9UX0lNUExFTUVOVEVEIGNhbGxfVXBkYXRlQXBwbGljYXRpb24KCk5PVF9JTVBMRU1FTlRFRDoKCWVycgoKLy8gY3JlYXRlQXBwbGljYXRpb24oYWRkcmVzc1s1XSx1aW50NjQpdm9pZAphYmlfcm91dGVfY3JlYXRlQXBwbGljYXRpb246CgkvLyBwYXJ0aWNpcGFudHM6IGFkZHJlc3NbNV0KCXR4bmEgQXBwbGljYXRpb25BcmdzIDIKCgkvLyB2ZXJzaW9uOiB1aW50NjQKCXR4bmEgQXBwbGljYXRpb25BcmdzIDEKCWJ0b2kKCgkvLyBleGVjdXRlIGNyZWF0ZUFwcGxpY2F0aW9uKGFkZHJlc3NbNV0sdWludDY0KXZvaWQKCWNhbGxzdWIgY3JlYXRlQXBwbGljYXRpb24KCWludCAxCglyZXR1cm4KCmNyZWF0ZUFwcGxpY2F0aW9uOgoJcHJvdG8gMiAwCgoJLy8gY29udHJhY3RzL21pZ3JhdGlvbi5hbGdvLnRzOjExCgkvLyBhc3NlcnQoc2hhNTEyXzI1NigKCS8vICAgICAgICdNdWx0aXNpZ0FkZHInCgkvLyAgICAgICArIGV4dHJhY3QzKGl0b2IodmVyc2lvbiksIDcsIDEpCgkvLyAgICAgICArIGV4dHJhY3QzKGl0b2IoMyksIDcsIDEpCgkvLyAgICAgICArIHJhd0J5dGVzKHBhcnRpY2lwYW50c1swXSkKCS8vICAgICAgICsgcmF3Qnl0ZXMocGFydGljaXBhbnRzWzFdKQoJLy8gICAgICAgKyByYXdCeXRlcyhwYXJ0aWNpcGFudHNbMl0pCgkvLyAgICAgICArIHJhd0J5dGVzKHBhcnRpY2lwYW50c1szXSkKCS8vICAgICAgICsgcmF3Qnl0ZXMocGFydGljaXBhbnRzWzRdKSwKCS8vICAgICApID09PSBjYXN0Qnl0ZXM8Ynl0ZVszMl0+KHRoaXMudHhuLnNlbmRlcikpCglieXRlICJNdWx0aXNpZ0FkZHIiCglmcmFtZV9kaWcgLTEgLy8gdmVyc2lvbjogdWludDY0CglpdG9iCglpbnQgNwoJaW50IDEKCWV4dHJhY3QzCgljb25jYXQKCWJ5dGUgMHgwMDAwMDAwMDAwMDAwMDAzCglpbnQgNwoJaW50IDEKCWV4dHJhY3QzCgljb25jYXQKCWZyYW1lX2RpZyAtMiAvLyBwYXJ0aWNpcGFudHM6IGFkZHJlc3NbNV0KCWV4dHJhY3QgMCAzMgoJY29uY2F0CglmcmFtZV9kaWcgLTIgLy8gcGFydGljaXBhbnRzOiBhZGRyZXNzWzVdCglleHRyYWN0IDMyIDMyCgljb25jYXQKCWZyYW1lX2RpZyAtMiAvLyBwYXJ0aWNpcGFudHM6IGFkZHJlc3NbNV0KCWV4dHJhY3QgNjQgMzIKCWNvbmNhdAoJZnJhbWVfZGlnIC0yIC8vIHBhcnRpY2lwYW50czogYWRkcmVzc1s1XQoJZXh0cmFjdCA5NiAzMgoJY29uY2F0CglmcmFtZV9kaWcgLTIgLy8gcGFydGljaXBhbnRzOiBhZGRyZXNzWzVdCglleHRyYWN0IDEyOCAzMgoJY29uY2F0CglzaGE1MTJfMjU2Cgl0eG4gU2VuZGVyCgk9PQoJYXNzZXJ0CglyZXRzdWIKCi8vIHVwZGF0ZUFwcGxpY2F0aW9uKCl2b2lkCmFiaV9yb3V0ZV91cGRhdGVBcHBsaWNhdGlvbjoKCS8vIGV4ZWN1dGUgdXBkYXRlQXBwbGljYXRpb24oKXZvaWQKCWNhbGxzdWIgdXBkYXRlQXBwbGljYXRpb24KCWludCAxCglyZXR1cm4KCnVwZGF0ZUFwcGxpY2F0aW9uOgoJcHJvdG8gMCAwCgoJLy8gY29udHJhY3RzL21pZ3JhdGlvbi5hbGdvLnRzOjI0CgkvLyBhc3NlcnQodGhpcy50eG4uc2VuZGVyID09PSB0aGlzLmFwcC5jcmVhdG9yKQoJdHhuIFNlbmRlcgoJdHhuYSBBcHBsaWNhdGlvbnMgMAoJYXBwX3BhcmFtc19nZXQgQXBwQ3JlYXRvcgoJYXNzZXJ0Cgk9PQoJYXNzZXJ0CglyZXRzdWIKCmNyZWF0ZV9Ob09wOgoJbWV0aG9kICJjcmVhdGVBcHBsaWNhdGlvbih1aW50NjQsYWRkcmVzc1s1XSl2b2lkIgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMAoJbWF0Y2ggYWJpX3JvdXRlX2NyZWF0ZUFwcGxpY2F0aW9uCgllcnIKCmNhbGxfVXBkYXRlQXBwbGljYXRpb246CgltZXRob2QgInVwZGF0ZUFwcGxpY2F0aW9uKCl2b2lkIgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMAoJbWF0Y2ggYWJpX3JvdXRlX3VwZGF0ZUFwcGxpY2F0aW9uCgllcnI=",
+    "approval": "I3ByYWdtYSB2ZXJzaW9uIDkKCi8vIFRoaXMgVEVBTCB3YXMgZ2VuZXJhdGVkIGJ5IFRFQUxTY3JpcHQgdjAuNDcuMAovLyBodHRwczovL2dpdGh1Yi5jb20vYWxnb3JhbmQtZGV2cmVsL1RFQUxTY3JpcHQKCi8vIFRoaXMgY29udHJhY3QgaXMgY29tcGxpYW50IHdpdGggYW5kL29yIGltcGxlbWVudHMgdGhlIGZvbGxvd2luZyBBUkNzOiBbIEFSQzQgXQoKLy8gVGhlIGZvbGxvd2luZyB0ZW4gbGluZXMgb2YgVEVBTCBoYW5kbGUgaW5pdGlhbCBwcm9ncmFtIGZsb3cKLy8gVGhpcyBwYXR0ZXJuIGlzIHVzZWQgdG8gbWFrZSBpdCBlYXN5IGZvciBhbnlvbmUgdG8gcGFyc2UgdGhlIHN0YXJ0IG9mIHRoZSBwcm9ncmFtIGFuZCBkZXRlcm1pbmUgaWYgYSBzcGVjaWZpYyBhY3Rpb24gaXMgYWxsb3dlZAovLyBIZXJlLCBhY3Rpb24gcmVmZXJzIHRvIHRoZSBPbkNvbXBsZXRlIGluIGNvbWJpbmF0aW9uIHdpdGggd2hldGhlciB0aGUgYXBwIGlzIGJlaW5nIGNyZWF0ZWQgb3IgY2FsbGVkCi8vIEV2ZXJ5IHBvc3NpYmxlIGFjdGlvbiBmb3IgdGhpcyBjb250cmFjdCBpcyByZXByZXNlbnRlZCBpbiB0aGUgc3dpdGNoIHN0YXRlbWVudAovLyBJZiB0aGUgYWN0aW9uIGlzIG5vdCBpbXBsbWVudGVkIGluIHRoZSBjb250cmFjdCwgaXRzIHJlcHNlY3RpdmUgYnJhbmNoIHdpbGwgYmUgIk5PVF9JTVBMTUVOVEVEIiB3aGljaCBqdXN0IGNvbnRhaW5zICJlcnIiCnR4biBBcHBsaWNhdGlvbklECmludCAwCj4KaW50IDYKKgp0eG4gT25Db21wbGV0aW9uCisKc3dpdGNoIGNyZWF0ZV9Ob09wIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgTk9UX0lNUExFTUVOVEVEIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgTk9UX0lNUExFTUVOVEVEIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgTk9UX0lNUExFTUVOVEVEIGNhbGxfVXBkYXRlQXBwbGljYXRpb24KCk5PVF9JTVBMRU1FTlRFRDoKCWVycgoKLy8gY3JlYXRlQXBwbGljYXRpb24oYWRkcmVzc1s1XSx1aW50NjQpdm9pZAphYmlfcm91dGVfY3JlYXRlQXBwbGljYXRpb246CgkvLyBwYXJ0aWNpcGFudHM6IGFkZHJlc3NbNV0KCXR4bmEgQXBwbGljYXRpb25BcmdzIDIKCgkvLyB2ZXJzaW9uOiB1aW50NjQKCXR4bmEgQXBwbGljYXRpb25BcmdzIDEKCWJ0b2kKCgkvLyBleGVjdXRlIGNyZWF0ZUFwcGxpY2F0aW9uKGFkZHJlc3NbNV0sdWludDY0KXZvaWQKCWNhbGxzdWIgY3JlYXRlQXBwbGljYXRpb24KCWludCAxCglyZXR1cm4KCmNyZWF0ZUFwcGxpY2F0aW9uOgoJcHJvdG8gMiAwCgoJLy8gY29udHJhY3RzL21zaWctY2hlY2suYWxnby50czoxMQoJLy8gYXNzZXJ0KHNoYTUxMl8yNTYoCgkvLyAgICAgICAnTXVsdGlzaWdBZGRyJwoJLy8gICAgICAgKyBleHRyYWN0MyhpdG9iKHZlcnNpb24pLCA3LCAxKQoJLy8gICAgICAgKyBleHRyYWN0MyhpdG9iKDMpLCA3LCAxKQoJLy8gICAgICAgKyByYXdCeXRlcyhwYXJ0aWNpcGFudHNbMF0pCgkvLyAgICAgICArIHJhd0J5dGVzKHBhcnRpY2lwYW50c1sxXSkKCS8vICAgICAgICsgcmF3Qnl0ZXMocGFydGljaXBhbnRzWzJdKQoJLy8gICAgICAgKyByYXdCeXRlcyhwYXJ0aWNpcGFudHNbM10pCgkvLyAgICAgICArIHJhd0J5dGVzKHBhcnRpY2lwYW50c1s0XSksCgkvLyAgICAgKSA9PT0gY2FzdEJ5dGVzPGJ5dGVbMzJdPih0aGlzLnR4bi5zZW5kZXIpKQoJYnl0ZSAiTXVsdGlzaWdBZGRyIgoJZnJhbWVfZGlnIC0xIC8vIHZlcnNpb246IHVpbnQ2NAoJaXRvYgoJaW50IDcKCWludCAxCglleHRyYWN0MwoJY29uY2F0CglieXRlIDB4MDAwMDAwMDAwMDAwMDAwMwoJaW50IDcKCWludCAxCglleHRyYWN0MwoJY29uY2F0CglmcmFtZV9kaWcgLTIgLy8gcGFydGljaXBhbnRzOiBhZGRyZXNzWzVdCglleHRyYWN0IDAgMzIKCWNvbmNhdAoJZnJhbWVfZGlnIC0yIC8vIHBhcnRpY2lwYW50czogYWRkcmVzc1s1XQoJZXh0cmFjdCAzMiAzMgoJY29uY2F0CglmcmFtZV9kaWcgLTIgLy8gcGFydGljaXBhbnRzOiBhZGRyZXNzWzVdCglleHRyYWN0IDY0IDMyCgljb25jYXQKCWZyYW1lX2RpZyAtMiAvLyBwYXJ0aWNpcGFudHM6IGFkZHJlc3NbNV0KCWV4dHJhY3QgOTYgMzIKCWNvbmNhdAoJZnJhbWVfZGlnIC0yIC8vIHBhcnRpY2lwYW50czogYWRkcmVzc1s1XQoJZXh0cmFjdCAxMjggMzIKCWNvbmNhdAoJc2hhNTEyXzI1NgoJdHhuIFNlbmRlcgoJPT0KCWFzc2VydAoJcmV0c3ViCgovLyB1cGRhdGVBcHBsaWNhdGlvbigpdm9pZAphYmlfcm91dGVfdXBkYXRlQXBwbGljYXRpb246CgkvLyBleGVjdXRlIHVwZGF0ZUFwcGxpY2F0aW9uKCl2b2lkCgljYWxsc3ViIHVwZGF0ZUFwcGxpY2F0aW9uCglpbnQgMQoJcmV0dXJuCgp1cGRhdGVBcHBsaWNhdGlvbjoKCXByb3RvIDAgMAoKCS8vIGNvbnRyYWN0cy9tc2lnLWNoZWNrLmFsZ28udHM6MjQKCS8vIGFzc2VydCh0aGlzLnR4bi5zZW5kZXIgPT09IHRoaXMuYXBwLmNyZWF0b3IpCgl0eG4gU2VuZGVyCgl0eG5hIEFwcGxpY2F0aW9ucyAwCglhcHBfcGFyYW1zX2dldCBBcHBDcmVhdG9yCglhc3NlcnQKCT09Cglhc3NlcnQKCXJldHN1YgoKY3JlYXRlX05vT3A6CgltZXRob2QgImNyZWF0ZUFwcGxpY2F0aW9uKHVpbnQ2NCxhZGRyZXNzWzVdKXZvaWQiCgl0eG5hIEFwcGxpY2F0aW9uQXJncyAwCgltYXRjaCBhYmlfcm91dGVfY3JlYXRlQXBwbGljYXRpb24KCWVycgoKY2FsbF9VcGRhdGVBcHBsaWNhdGlvbjoKCW1ldGhvZCAidXBkYXRlQXBwbGljYXRpb24oKXZvaWQiCgl0eG5hIEFwcGxpY2F0aW9uQXJncyAwCgltYXRjaCBhYmlfcm91dGVfdXBkYXRlQXBwbGljYXRpb24KCWVycg==",
     "clear": "I3ByYWdtYSB2ZXJzaW9uIDkKaW50IDE="
   },
   "contract": {
-    "name": "Migration",
+    "name": "MsigCheck",
     "desc": "",
     "methods": [
       {
@@ -153,9 +153,9 @@ export type BinaryState = {
 }
 
 /**
- * Defines the types of available calls and state of the Migration smart contract.
+ * Defines the types of available calls and state of the MsigCheck smart contract.
  */
-export type Migration = {
+export type MsigCheck = {
   /**
    * Maps method signatures / names to their argument and return types.
    */
@@ -178,11 +178,11 @@ export type Migration = {
 /**
  * Defines the possible abi call signatures
  */
-export type MigrationSig = keyof Migration['methods']
+export type MsigCheckSig = keyof MsigCheck['methods']
 /**
  * Defines an object containing all relevant parameters for a single call to the contract. Where TSignature is undefined, a bare call is made
  */
-export type TypedCallParams<TSignature extends MigrationSig | undefined> = {
+export type TypedCallParams<TSignature extends MsigCheckSig | undefined> = {
   method: TSignature
   methodArgs: TSignature extends undefined ? undefined : Array<ABIAppCallArg | undefined>
 } & AppClientCallCoreParams & CoreAppCallArgs
@@ -191,59 +191,59 @@ export type TypedCallParams<TSignature extends MigrationSig | undefined> = {
  */
 export type BareCallArgs = Omit<RawAppCallArgs, keyof CoreAppCallArgs>
 /**
- * Maps a method signature from the Migration smart contract to the method's arguments in either tuple of struct form
+ * Maps a method signature from the MsigCheck smart contract to the method's arguments in either tuple of struct form
  */
-export type MethodArgs<TSignature extends MigrationSig> = Migration['methods'][TSignature]['argsObj' | 'argsTuple']
+export type MethodArgs<TSignature extends MsigCheckSig> = MsigCheck['methods'][TSignature]['argsObj' | 'argsTuple']
 /**
- * Maps a method signature from the Migration smart contract to the method's return type
+ * Maps a method signature from the MsigCheck smart contract to the method's return type
  */
-export type MethodReturn<TSignature extends MigrationSig> = Migration['methods'][TSignature]['returns']
+export type MethodReturn<TSignature extends MsigCheckSig> = MsigCheck['methods'][TSignature]['returns']
 
 /**
  * A factory for available 'create' calls
  */
-export type MigrationCreateCalls = (typeof MigrationCallFactory)['create']
+export type MsigCheckCreateCalls = (typeof MsigCheckCallFactory)['create']
 /**
  * Defines supported create methods for this smart contract
  */
-export type MigrationCreateCallParams =
+export type MsigCheckCreateCallParams =
   | (TypedCallParams<'createApplication(uint64,address[5])void'> & (OnCompleteNoOp))
 /**
  * A factory for available 'update' calls
  */
-export type MigrationUpdateCalls = (typeof MigrationCallFactory)['update']
+export type MsigCheckUpdateCalls = (typeof MsigCheckCallFactory)['update']
 /**
  * Defines supported update methods for this smart contract
  */
-export type MigrationUpdateCallParams =
+export type MsigCheckUpdateCallParams =
   | TypedCallParams<'updateApplication()void'>
 /**
  * Defines arguments required for the deploy method.
  */
-export type MigrationDeployArgs = {
+export type MsigCheckDeployArgs = {
   deployTimeParams?: TealTemplateParams
   /**
    * A delegate which takes a create call factory and returns the create call params for this smart contract
    */
-  createCall?: (callFactory: MigrationCreateCalls) => MigrationCreateCallParams
+  createCall?: (callFactory: MsigCheckCreateCalls) => MsigCheckCreateCallParams
   /**
    * A delegate which takes a update call factory and returns the update call params for this smart contract
    */
-  updateCall?: (callFactory: MigrationUpdateCalls) => MigrationUpdateCallParams
+  updateCall?: (callFactory: MsigCheckUpdateCalls) => MsigCheckUpdateCallParams
 }
 
 
 /**
  * Exposes methods for constructing all available smart contract calls
  */
-export abstract class MigrationCallFactory {
+export abstract class MsigCheckCallFactory {
   /**
    * Gets available create call factories
    */
   static get create() {
     return {
       /**
-       * Constructs a create call for the Migration smart contract using the createApplication(uint64,address[5])void ABI method
+       * Constructs a create call for the MsigCheck smart contract using the createApplication(uint64,address[5])void ABI method
        *
        * @param args Any args for the contract call
        * @param params Any additional parameters for the call
@@ -265,7 +265,7 @@ export abstract class MigrationCallFactory {
   static get update() {
     return {
       /**
-       * Constructs an update call for the Migration smart contract using the updateApplication()void ABI method
+       * Constructs an update call for the MsigCheck smart contract using the updateApplication()void ABI method
        *
        * @param args Any args for the contract call
        * @param params Any additional parameters for the call
@@ -284,9 +284,9 @@ export abstract class MigrationCallFactory {
 }
 
 /**
- * A client to make calls to the Migration smart contract
+ * A client to make calls to the MsigCheck smart contract
  */
-export class MigrationClient {
+export class MsigCheckClient {
   /**
    * The underlying `ApplicationClient` for when you want to have more flexibility
    */
@@ -295,7 +295,7 @@ export class MigrationClient {
   private readonly sender: SendTransactionFrom | undefined
 
   /**
-   * Creates a new instance of `MigrationClient`
+   * Creates a new instance of `MsigCheckClient`
    *
    * @param appDetails appDetails The details to identify the app to deploy
    * @param algod An algod client instance
@@ -332,19 +332,19 @@ export class MigrationClient {
    * @param returnValueFormatter An optional delegate which when provided will be used to map non-undefined return values to the target type
    * @returns The result of the smart contract call
    */
-  public async call<TSignature extends keyof Migration['methods']>(typedCallParams: TypedCallParams<TSignature>, returnValueFormatter?: (value: any) => MethodReturn<TSignature>) {
+  public async call<TSignature extends keyof MsigCheck['methods']>(typedCallParams: TypedCallParams<TSignature>, returnValueFormatter?: (value: any) => MethodReturn<TSignature>) {
     return this.mapReturnValue<MethodReturn<TSignature>>(await this.appClient.call(typedCallParams), returnValueFormatter)
   }
 
   /**
-   * Idempotently deploys the Migration smart contract.
+   * Idempotently deploys the MsigCheck smart contract.
    *
    * @param params The arguments for the contract calls and any additional parameters for the call
    * @returns The deployment result
    */
-  public deploy(params: MigrationDeployArgs & AppClientDeployCoreParams = {}): ReturnType<ApplicationClient['deploy']> {
-    const createArgs = params.createCall?.(MigrationCallFactory.create)
-    const updateArgs = params.updateCall?.(MigrationCallFactory.update)
+  public deploy(params: MsigCheckDeployArgs & AppClientDeployCoreParams = {}): ReturnType<ApplicationClient['deploy']> {
+    const createArgs = params.createCall?.(MsigCheckCallFactory.create)
+    const updateArgs = params.updateCall?.(MsigCheckCallFactory.update)
     return this.appClient.deploy({
       ...params,
       updateArgs,
@@ -360,14 +360,14 @@ export class MigrationClient {
     const $this = this
     return {
       /**
-       * Creates a new instance of the Migration smart contract using the createApplication(uint64,address[5])void ABI method.
+       * Creates a new instance of the MsigCheck smart contract using the createApplication(uint64,address[5])void ABI method.
        *
        * @param args The arguments for the smart contract call
        * @param params Any additional parameters for the call
        * @returns The create result
        */
       async createApplication(args: MethodArgs<'createApplication(uint64,address[5])void'>, params: AppClientCallCoreParams & AppClientCompilationParams & (OnCompleteNoOp) = {}): Promise<AppCallTransactionResultOfType<MethodReturn<'createApplication(uint64,address[5])void'>>> {
-        return $this.mapReturnValue(await $this.appClient.create(MigrationCallFactory.create.createApplication(args, params)))
+        return $this.mapReturnValue(await $this.appClient.create(MsigCheckCallFactory.create.createApplication(args, params)))
       },
     }
   }
@@ -379,20 +379,20 @@ export class MigrationClient {
     const $this = this
     return {
       /**
-       * Updates an existing instance of the Migration smart contract using the updateApplication()void ABI method.
+       * Updates an existing instance of the MsigCheck smart contract using the updateApplication()void ABI method.
        *
        * @param args The arguments for the smart contract call
        * @param params Any additional parameters for the call
        * @returns The update result
        */
       async updateApplication(args: MethodArgs<'updateApplication()void'>, params: AppClientCallCoreParams & AppClientCompilationParams = {}): Promise<AppCallTransactionResultOfType<MethodReturn<'updateApplication()void'>>> {
-        return $this.mapReturnValue(await $this.appClient.update(MigrationCallFactory.update.updateApplication(args, params)))
+        return $this.mapReturnValue(await $this.appClient.update(MsigCheckCallFactory.update.updateApplication(args, params)))
       },
     }
   }
 
   /**
-   * Makes a clear_state call to an existing instance of the Migration smart contract.
+   * Makes a clear_state call to an existing instance of the MsigCheck smart contract.
    *
    * @param args The arguments for the bare call
    * @returns The clear_state result
@@ -401,7 +401,7 @@ export class MigrationClient {
     return this.appClient.clearState(args)
   }
 
-  public compose(): MigrationComposer {
+  public compose(): MsigCheckComposer {
     const client = this
     const atc = new AtomicTransactionComposer()
     let promiseChain:Promise<unknown> = Promise.resolve()
@@ -438,31 +438,31 @@ export class MigrationClient {
           returns: result.returns?.map((val, i) => resultMappers[i] !== undefined ? resultMappers[i]!(val.returnValue) : val.returnValue)
         }
       }
-    } as unknown as MigrationComposer
+    } as unknown as MsigCheckComposer
   }
 }
-export type MigrationComposer<TReturns extends [...any[]] = []> = {
+export type MsigCheckComposer<TReturns extends [...any[]] = []> = {
   /**
    * Gets available update methods
    */
   readonly update: {
     /**
-     * Updates an existing instance of the Migration smart contract using the updateApplication()void ABI method.
+     * Updates an existing instance of the MsigCheck smart contract using the updateApplication()void ABI method.
      *
      * @param args The arguments for the smart contract call
      * @param params Any additional parameters for the call
      * @returns The typed transaction composer so you can fluently chain multiple calls or call execute to execute all queued up transactions
      */
-    updateApplication(args: MethodArgs<'updateApplication()void'>, params?: AppClientCallCoreParams & AppClientCompilationParams): MigrationComposer<[...TReturns, MethodReturn<'updateApplication()void'>]>
+    updateApplication(args: MethodArgs<'updateApplication()void'>, params?: AppClientCallCoreParams & AppClientCompilationParams): MsigCheckComposer<[...TReturns, MethodReturn<'updateApplication()void'>]>
   }
 
   /**
-   * Makes a clear_state call to an existing instance of the Migration smart contract.
+   * Makes a clear_state call to an existing instance of the MsigCheck smart contract.
    *
    * @param args The arguments for the bare call
    * @returns The typed transaction composer so you can fluently chain multiple calls or call execute to execute all queued up transactions
    */
-  clearState(args?: BareCallArgs & AppClientCallCoreParams & CoreAppCallArgs): MigrationComposer<[...TReturns, undefined]>
+  clearState(args?: BareCallArgs & AppClientCallCoreParams & CoreAppCallArgs): MsigCheckComposer<[...TReturns, undefined]>
 
   /**
    * Adds a transaction to the composer
@@ -470,7 +470,7 @@ export type MigrationComposer<TReturns extends [...any[]] = []> = {
    * @param txn One of: A TransactionWithSigner object (returned as is), a TransactionToSign object (signer is obtained from the signer property), a Transaction object (signer is extracted from the defaultSender parameter), an async SendTransactionResult returned by one of algokit utils helpers (signer is obtained from the defaultSender parameter)
    * @param defaultSender The default sender to be used to obtain a signer where the object provided to the transaction parameter does not include a signer.
    */
-  addTransaction(txn: TransactionWithSigner | TransactionToSign | Transaction | Promise<SendTransactionResult>, defaultSender?: SendTransactionFrom): MigrationComposer<TReturns>
+  addTransaction(txn: TransactionWithSigner | TransactionToSign | Transaction | Promise<SendTransactionResult>, defaultSender?: SendTransactionFrom): MsigCheckComposer<TReturns>
   /**
    * Returns the underlying AtomicTransactionComposer instance
    */
@@ -478,9 +478,9 @@ export type MigrationComposer<TReturns extends [...any[]] = []> = {
   /**
    * Executes the transaction group and returns an array of results
    */
-  execute(): Promise<MigrationComposerResults<TReturns>>
+  execute(): Promise<MsigCheckComposerResults<TReturns>>
 }
-export type MigrationComposerResults<TReturns extends [...any[]]> = {
+export type MsigCheckComposerResults<TReturns extends [...any[]]> = {
   returns: TReturns
   groupId: string
   txIds: string[]

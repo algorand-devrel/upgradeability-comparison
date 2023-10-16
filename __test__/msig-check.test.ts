@@ -4,13 +4,13 @@ import {
 import * as algokit from '@algorandfoundation/algokit-utils';
 import algosdk from 'algosdk';
 import { algorandFixture } from '@algorandfoundation/algokit-utils/testing';
-import { MigrationClient } from '../contracts/clients/MigrationClient';
+import { MsigCheckClient } from '../contracts/clients/MsigCheckClient';
 
 const fixture = algorandFixture();
 
-let appClient: MigrationClient;
+let appClient: MsigCheckClient;
 
-describe('Migration', () => {
+describe('MsigCheck', () => {
   const msigVersion = 1;
   let msigParticipants: [
     algosdk.Account,
@@ -47,7 +47,7 @@ describe('Migration', () => {
       minSpendingBalance: algokit.algos(1e4),
     }, algod, kmd);
 
-    appClient = new MigrationClient(
+    appClient = new MsigCheckClient(
       {
         sender: creator,
         resolveBy: 'id',
