@@ -37,7 +37,7 @@ abi_route_setSourceApplication:
 setSourceApplication:
 	proto 1 0
 
-	// contracts/immutable-new.algo.ts:8
+	// contracts/immutable-v1.algo.ts:8
 	// assert(this.txn.sender === this.app.creator)
 	txn Sender
 	txna Applications 0
@@ -46,7 +46,7 @@ setSourceApplication:
 	==
 	assert
 
-	// contracts/immutable-new.algo.ts:9
+	// contracts/immutable-v1.algo.ts:9
 	// this.sourceApplication.value = app
 	byte "sourceApplication"
 	frame_dig -1 // app: application
@@ -78,7 +78,7 @@ abi_route_sum:
 sum:
 	proto 3 0
 
-	// contracts/immutable-new.algo.ts:14
+	// contracts/immutable-v1.algo.ts:14
 	// assert(this.txn.sender === this.sourceApplication.value.address)
 	txn Sender
 	byte "sourceApplication"
@@ -88,10 +88,10 @@ sum:
 	==
 	assert
 
-	// contracts/immutable-new.algo.ts:15
-	// return a + b;
+	// contracts/immutable-v1.algo.ts:15
+	// return a + a;
 	frame_dig -1 // a: uint64
-	frame_dig -2 // b: uint64
+	frame_dig -1 // a: uint64
 	+
 	itob
 	byte 0x151f7c75

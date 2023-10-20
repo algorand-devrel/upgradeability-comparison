@@ -75,11 +75,11 @@ export const APP_SPEC: AppSpec = {
     }
   },
   "source": {
-    "approval": "I3ByYWdtYSB2ZXJzaW9uIDkKCi8vIFRoaXMgVEVBTCB3YXMgZ2VuZXJhdGVkIGJ5IFRFQUxTY3JpcHQgdjAuNDcuMAovLyBodHRwczovL2dpdGh1Yi5jb20vYWxnb3JhbmQtZGV2cmVsL1RFQUxTY3JpcHQKCi8vIFRoaXMgY29udHJhY3QgaXMgY29tcGxpYW50IHdpdGggYW5kL29yIGltcGxlbWVudHMgdGhlIGZvbGxvd2luZyBBUkNzOiBbIEFSQzQgXQoKLy8gVGhlIGZvbGxvd2luZyB0ZW4gbGluZXMgb2YgVEVBTCBoYW5kbGUgaW5pdGlhbCBwcm9ncmFtIGZsb3cKLy8gVGhpcyBwYXR0ZXJuIGlzIHVzZWQgdG8gbWFrZSBpdCBlYXN5IGZvciBhbnlvbmUgdG8gcGFyc2UgdGhlIHN0YXJ0IG9mIHRoZSBwcm9ncmFtIGFuZCBkZXRlcm1pbmUgaWYgYSBzcGVjaWZpYyBhY3Rpb24gaXMgYWxsb3dlZAovLyBIZXJlLCBhY3Rpb24gcmVmZXJzIHRvIHRoZSBPbkNvbXBsZXRlIGluIGNvbWJpbmF0aW9uIHdpdGggd2hldGhlciB0aGUgYXBwIGlzIGJlaW5nIGNyZWF0ZWQgb3IgY2FsbGVkCi8vIEV2ZXJ5IHBvc3NpYmxlIGFjdGlvbiBmb3IgdGhpcyBjb250cmFjdCBpcyByZXByZXNlbnRlZCBpbiB0aGUgc3dpdGNoIHN0YXRlbWVudAovLyBJZiB0aGUgYWN0aW9uIGlzIG5vdCBpbXBsbWVudGVkIGluIHRoZSBjb250cmFjdCwgaXRzIHJlcHNlY3RpdmUgYnJhbmNoIHdpbGwgYmUgIk5PVF9JTVBMTUVOVEVEIiB3aGljaCBqdXN0IGNvbnRhaW5zICJlcnIiCnR4biBBcHBsaWNhdGlvbklECmludCAwCj4KaW50IDYKKgp0eG4gT25Db21wbGV0aW9uCisKc3dpdGNoIGNyZWF0ZV9Ob09wIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgTk9UX0lNUExFTUVOVEVEIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgY2FsbF9Ob09wCgpOT1RfSU1QTEVNRU5URUQ6CgllcnIKCi8vIHNldFNvdXJjZUFwcGxpY2F0aW9uKGFwcGxpY2F0aW9uKXZvaWQKYWJpX3JvdXRlX3NldFNvdXJjZUFwcGxpY2F0aW9uOgoJLy8gYXBwOiBhcHBsaWNhdGlvbgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQoJYnRvaQoJdHhuYXMgQXBwbGljYXRpb25zCgoJLy8gZXhlY3V0ZSBzZXRTb3VyY2VBcHBsaWNhdGlvbihhcHBsaWNhdGlvbil2b2lkCgljYWxsc3ViIHNldFNvdXJjZUFwcGxpY2F0aW9uCglpbnQgMQoJcmV0dXJuCgpzZXRTb3VyY2VBcHBsaWNhdGlvbjoKCXByb3RvIDEgMAoKCS8vIGNvbnRyYWN0cy9pbW11dGFibGUtbmV3LmFsZ28udHM6OAoJLy8gYXNzZXJ0KHRoaXMudHhuLnNlbmRlciA9PT0gdGhpcy5hcHAuY3JlYXRvcikKCXR4biBTZW5kZXIKCXR4bmEgQXBwbGljYXRpb25zIDAKCWFwcF9wYXJhbXNfZ2V0IEFwcENyZWF0b3IKCWFzc2VydAoJPT0KCWFzc2VydAoKCS8vIGNvbnRyYWN0cy9pbW11dGFibGUtbmV3LmFsZ28udHM6OQoJLy8gdGhpcy5zb3VyY2VBcHBsaWNhdGlvbi52YWx1ZSA9IGFwcAoJYnl0ZSAic291cmNlQXBwbGljYXRpb24iCglmcmFtZV9kaWcgLTEgLy8gYXBwOiBhcHBsaWNhdGlvbgoJYXBwX2dsb2JhbF9wdXQKCXJldHN1YgoKLy8gc3VtKGFwcGxpY2F0aW9uLHVpbnQ2NCx1aW50NjQpdWludDY0Ci8vCi8vIC8vIGVzbGludC1kaXNhYmxlLW5leHQtbGluZSBuby11bnVzZWQtdmFycwphYmlfcm91dGVfc3VtOgoJLy8gc291cmNlQXBwOiBhcHBsaWNhdGlvbgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMwoJYnRvaQoJdHhuYXMgQXBwbGljYXRpb25zCgoJLy8gYjogdWludDY0Cgl0eG5hIEFwcGxpY2F0aW9uQXJncyAyCglidG9pCgoJLy8gYTogdWludDY0Cgl0eG5hIEFwcGxpY2F0aW9uQXJncyAxCglidG9pCgoJLy8gZXhlY3V0ZSBzdW0oYXBwbGljYXRpb24sdWludDY0LHVpbnQ2NCl1aW50NjQKCWNhbGxzdWIgc3VtCglpbnQgMQoJcmV0dXJuCgpzdW06Cglwcm90byAzIDAKCgkvLyBjb250cmFjdHMvaW1tdXRhYmxlLW5ldy5hbGdvLnRzOjE0CgkvLyBhc3NlcnQodGhpcy50eG4uc2VuZGVyID09PSB0aGlzLnNvdXJjZUFwcGxpY2F0aW9uLnZhbHVlLmFkZHJlc3MpCgl0eG4gU2VuZGVyCglieXRlICJzb3VyY2VBcHBsaWNhdGlvbiIKCWFwcF9nbG9iYWxfZ2V0CglhcHBfcGFyYW1zX2dldCBBcHBBZGRyZXNzCglhc3NlcnQKCT09Cglhc3NlcnQKCgkvLyBjb250cmFjdHMvaW1tdXRhYmxlLW5ldy5hbGdvLnRzOjE1CgkvLyByZXR1cm4gYSArIGI7CglmcmFtZV9kaWcgLTEgLy8gYTogdWludDY0CglmcmFtZV9kaWcgLTIgLy8gYjogdWludDY0CgkrCglpdG9iCglieXRlIDB4MTUxZjdjNzUKCXN3YXAKCWNvbmNhdAoJbG9nCglyZXRzdWIKCmFiaV9yb3V0ZV9jcmVhdGVBcHBsaWNhdGlvbjoKCWludCAxCglyZXR1cm4KCmNyZWF0ZV9Ob09wOgoJbWV0aG9kICJjcmVhdGVBcHBsaWNhdGlvbigpdm9pZCIKCXR4bmEgQXBwbGljYXRpb25BcmdzIDAKCW1hdGNoIGFiaV9yb3V0ZV9jcmVhdGVBcHBsaWNhdGlvbgoJZXJyCgpjYWxsX05vT3A6CgltZXRob2QgInNldFNvdXJjZUFwcGxpY2F0aW9uKGFwcGxpY2F0aW9uKXZvaWQiCgltZXRob2QgInN1bSh1aW50NjQsdWludDY0LGFwcGxpY2F0aW9uKXVpbnQ2NCIKCXR4bmEgQXBwbGljYXRpb25BcmdzIDAKCW1hdGNoIGFiaV9yb3V0ZV9zZXRTb3VyY2VBcHBsaWNhdGlvbiBhYmlfcm91dGVfc3VtCgllcnI=",
+    "approval": "I3ByYWdtYSB2ZXJzaW9uIDkKCi8vIFRoaXMgVEVBTCB3YXMgZ2VuZXJhdGVkIGJ5IFRFQUxTY3JpcHQgdjAuNDcuMAovLyBodHRwczovL2dpdGh1Yi5jb20vYWxnb3JhbmQtZGV2cmVsL1RFQUxTY3JpcHQKCi8vIFRoaXMgY29udHJhY3QgaXMgY29tcGxpYW50IHdpdGggYW5kL29yIGltcGxlbWVudHMgdGhlIGZvbGxvd2luZyBBUkNzOiBbIEFSQzQgXQoKLy8gVGhlIGZvbGxvd2luZyB0ZW4gbGluZXMgb2YgVEVBTCBoYW5kbGUgaW5pdGlhbCBwcm9ncmFtIGZsb3cKLy8gVGhpcyBwYXR0ZXJuIGlzIHVzZWQgdG8gbWFrZSBpdCBlYXN5IGZvciBhbnlvbmUgdG8gcGFyc2UgdGhlIHN0YXJ0IG9mIHRoZSBwcm9ncmFtIGFuZCBkZXRlcm1pbmUgaWYgYSBzcGVjaWZpYyBhY3Rpb24gaXMgYWxsb3dlZAovLyBIZXJlLCBhY3Rpb24gcmVmZXJzIHRvIHRoZSBPbkNvbXBsZXRlIGluIGNvbWJpbmF0aW9uIHdpdGggd2hldGhlciB0aGUgYXBwIGlzIGJlaW5nIGNyZWF0ZWQgb3IgY2FsbGVkCi8vIEV2ZXJ5IHBvc3NpYmxlIGFjdGlvbiBmb3IgdGhpcyBjb250cmFjdCBpcyByZXByZXNlbnRlZCBpbiB0aGUgc3dpdGNoIHN0YXRlbWVudAovLyBJZiB0aGUgYWN0aW9uIGlzIG5vdCBpbXBsbWVudGVkIGluIHRoZSBjb250cmFjdCwgaXRzIHJlcHNlY3RpdmUgYnJhbmNoIHdpbGwgYmUgIk5PVF9JTVBMTUVOVEVEIiB3aGljaCBqdXN0IGNvbnRhaW5zICJlcnIiCnR4biBBcHBsaWNhdGlvbklECmludCAwCj4KaW50IDYKKgp0eG4gT25Db21wbGV0aW9uCisKc3dpdGNoIGNyZWF0ZV9Ob09wIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgTk9UX0lNUExFTUVOVEVEIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgY2FsbF9Ob09wCgpOT1RfSU1QTEVNRU5URUQ6CgllcnIKCi8vIHNldFNvdXJjZUFwcGxpY2F0aW9uKGFwcGxpY2F0aW9uKXZvaWQKYWJpX3JvdXRlX3NldFNvdXJjZUFwcGxpY2F0aW9uOgoJLy8gYXBwOiBhcHBsaWNhdGlvbgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQoJYnRvaQoJdHhuYXMgQXBwbGljYXRpb25zCgoJLy8gZXhlY3V0ZSBzZXRTb3VyY2VBcHBsaWNhdGlvbihhcHBsaWNhdGlvbil2b2lkCgljYWxsc3ViIHNldFNvdXJjZUFwcGxpY2F0aW9uCglpbnQgMQoJcmV0dXJuCgpzZXRTb3VyY2VBcHBsaWNhdGlvbjoKCXByb3RvIDEgMAoKCS8vIGNvbnRyYWN0cy9pbW11dGFibGUtdjIuYWxnby50czo4CgkvLyBhc3NlcnQodGhpcy50eG4uc2VuZGVyID09PSB0aGlzLmFwcC5jcmVhdG9yKQoJdHhuIFNlbmRlcgoJdHhuYSBBcHBsaWNhdGlvbnMgMAoJYXBwX3BhcmFtc19nZXQgQXBwQ3JlYXRvcgoJYXNzZXJ0Cgk9PQoJYXNzZXJ0CgoJLy8gY29udHJhY3RzL2ltbXV0YWJsZS12Mi5hbGdvLnRzOjkKCS8vIHRoaXMuc291cmNlQXBwbGljYXRpb24udmFsdWUgPSBhcHAKCWJ5dGUgInNvdXJjZUFwcGxpY2F0aW9uIgoJZnJhbWVfZGlnIC0xIC8vIGFwcDogYXBwbGljYXRpb24KCWFwcF9nbG9iYWxfcHV0CglyZXRzdWIKCi8vIHN1bShhcHBsaWNhdGlvbix1aW50NjQsdWludDY0KXVpbnQ2NAovLwovLyAvLyBlc2xpbnQtZGlzYWJsZS1uZXh0LWxpbmUgbm8tdW51c2VkLXZhcnMKYWJpX3JvdXRlX3N1bToKCS8vIHNvdXJjZUFwcDogYXBwbGljYXRpb24KCXR4bmEgQXBwbGljYXRpb25BcmdzIDMKCWJ0b2kKCXR4bmFzIEFwcGxpY2F0aW9ucwoKCS8vIGI6IHVpbnQ2NAoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMgoJYnRvaQoKCS8vIGE6IHVpbnQ2NAoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQoJYnRvaQoKCS8vIGV4ZWN1dGUgc3VtKGFwcGxpY2F0aW9uLHVpbnQ2NCx1aW50NjQpdWludDY0CgljYWxsc3ViIHN1bQoJaW50IDEKCXJldHVybgoKc3VtOgoJcHJvdG8gMyAwCgoJLy8gY29udHJhY3RzL2ltbXV0YWJsZS12Mi5hbGdvLnRzOjE0CgkvLyBhc3NlcnQodGhpcy50eG4uc2VuZGVyID09PSB0aGlzLnNvdXJjZUFwcGxpY2F0aW9uLnZhbHVlLmFkZHJlc3MpCgl0eG4gU2VuZGVyCglieXRlICJzb3VyY2VBcHBsaWNhdGlvbiIKCWFwcF9nbG9iYWxfZ2V0CglhcHBfcGFyYW1zX2dldCBBcHBBZGRyZXNzCglhc3NlcnQKCT09Cglhc3NlcnQKCgkvLyBjb250cmFjdHMvaW1tdXRhYmxlLXYyLmFsZ28udHM6MTUKCS8vIHJldHVybiBhICsgYjsKCWZyYW1lX2RpZyAtMSAvLyBhOiB1aW50NjQKCWZyYW1lX2RpZyAtMiAvLyBiOiB1aW50NjQKCSsKCWl0b2IKCWJ5dGUgMHgxNTFmN2M3NQoJc3dhcAoJY29uY2F0Cglsb2cKCXJldHN1YgoKYWJpX3JvdXRlX2NyZWF0ZUFwcGxpY2F0aW9uOgoJaW50IDEKCXJldHVybgoKY3JlYXRlX05vT3A6CgltZXRob2QgImNyZWF0ZUFwcGxpY2F0aW9uKCl2b2lkIgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMAoJbWF0Y2ggYWJpX3JvdXRlX2NyZWF0ZUFwcGxpY2F0aW9uCgllcnIKCmNhbGxfTm9PcDoKCW1ldGhvZCAic2V0U291cmNlQXBwbGljYXRpb24oYXBwbGljYXRpb24pdm9pZCIKCW1ldGhvZCAic3VtKHVpbnQ2NCx1aW50NjQsYXBwbGljYXRpb24pdWludDY0IgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMAoJbWF0Y2ggYWJpX3JvdXRlX3NldFNvdXJjZUFwcGxpY2F0aW9uIGFiaV9yb3V0ZV9zdW0KCWVycg==",
     "clear": "I3ByYWdtYSB2ZXJzaW9uIDkKaW50IDE="
   },
   "contract": {
-    "name": "ImmutableNew",
+    "name": "ImmutableV2",
     "desc": "",
     "methods": [
       {
@@ -183,9 +183,9 @@ export type BinaryState = {
 }
 
 /**
- * Defines the types of available calls and state of the ImmutableNew smart contract.
+ * Defines the types of available calls and state of the ImmutableV2 smart contract.
  */
-export type ImmutableNew = {
+export type ImmutableV2 = {
   /**
    * Maps method signatures / names to their argument and return types.
    */
@@ -224,11 +224,11 @@ export type ImmutableNew = {
 /**
  * Defines the possible abi call signatures
  */
-export type ImmutableNewSig = keyof ImmutableNew['methods']
+export type ImmutableV2Sig = keyof ImmutableV2['methods']
 /**
  * Defines an object containing all relevant parameters for a single call to the contract. Where TSignature is undefined, a bare call is made
  */
-export type TypedCallParams<TSignature extends ImmutableNewSig | undefined> = {
+export type TypedCallParams<TSignature extends ImmutableV2Sig | undefined> = {
   method: TSignature
   methodArgs: TSignature extends undefined ? undefined : Array<ABIAppCallArg | undefined>
 } & AppClientCallCoreParams & CoreAppCallArgs
@@ -237,46 +237,46 @@ export type TypedCallParams<TSignature extends ImmutableNewSig | undefined> = {
  */
 export type BareCallArgs = Omit<RawAppCallArgs, keyof CoreAppCallArgs>
 /**
- * Maps a method signature from the ImmutableNew smart contract to the method's arguments in either tuple of struct form
+ * Maps a method signature from the ImmutableV2 smart contract to the method's arguments in either tuple of struct form
  */
-export type MethodArgs<TSignature extends ImmutableNewSig> = ImmutableNew['methods'][TSignature]['argsObj' | 'argsTuple']
+export type MethodArgs<TSignature extends ImmutableV2Sig> = ImmutableV2['methods'][TSignature]['argsObj' | 'argsTuple']
 /**
- * Maps a method signature from the ImmutableNew smart contract to the method's return type
+ * Maps a method signature from the ImmutableV2 smart contract to the method's return type
  */
-export type MethodReturn<TSignature extends ImmutableNewSig> = ImmutableNew['methods'][TSignature]['returns']
+export type MethodReturn<TSignature extends ImmutableV2Sig> = ImmutableV2['methods'][TSignature]['returns']
 
 /**
  * A factory for available 'create' calls
  */
-export type ImmutableNewCreateCalls = (typeof ImmutableNewCallFactory)['create']
+export type ImmutableV2CreateCalls = (typeof ImmutableV2CallFactory)['create']
 /**
  * Defines supported create methods for this smart contract
  */
-export type ImmutableNewCreateCallParams =
+export type ImmutableV2CreateCallParams =
   | (TypedCallParams<'createApplication()void'> & (OnCompleteNoOp))
 /**
  * Defines arguments required for the deploy method.
  */
-export type ImmutableNewDeployArgs = {
+export type ImmutableV2DeployArgs = {
   deployTimeParams?: TealTemplateParams
   /**
    * A delegate which takes a create call factory and returns the create call params for this smart contract
    */
-  createCall?: (callFactory: ImmutableNewCreateCalls) => ImmutableNewCreateCallParams
+  createCall?: (callFactory: ImmutableV2CreateCalls) => ImmutableV2CreateCallParams
 }
 
 
 /**
  * Exposes methods for constructing all available smart contract calls
  */
-export abstract class ImmutableNewCallFactory {
+export abstract class ImmutableV2CallFactory {
   /**
    * Gets available create call factories
    */
   static get create() {
     return {
       /**
-       * Constructs a create call for the ImmutableNew smart contract using the createApplication()void ABI method
+       * Constructs a create call for the ImmutableV2 smart contract using the createApplication()void ABI method
        *
        * @param args Any args for the contract call
        * @param params Any additional parameters for the call
@@ -323,9 +323,9 @@ export abstract class ImmutableNewCallFactory {
 }
 
 /**
- * A client to make calls to the ImmutableNew smart contract
+ * A client to make calls to the ImmutableV2 smart contract
  */
-export class ImmutableNewClient {
+export class ImmutableV2Client {
   /**
    * The underlying `ApplicationClient` for when you want to have more flexibility
    */
@@ -334,7 +334,7 @@ export class ImmutableNewClient {
   private readonly sender: SendTransactionFrom | undefined
 
   /**
-   * Creates a new instance of `ImmutableNewClient`
+   * Creates a new instance of `ImmutableV2Client`
    *
    * @param appDetails appDetails The details to identify the app to deploy
    * @param algod An algod client instance
@@ -371,18 +371,18 @@ export class ImmutableNewClient {
    * @param returnValueFormatter An optional delegate which when provided will be used to map non-undefined return values to the target type
    * @returns The result of the smart contract call
    */
-  public async call<TSignature extends keyof ImmutableNew['methods']>(typedCallParams: TypedCallParams<TSignature>, returnValueFormatter?: (value: any) => MethodReturn<TSignature>) {
+  public async call<TSignature extends keyof ImmutableV2['methods']>(typedCallParams: TypedCallParams<TSignature>, returnValueFormatter?: (value: any) => MethodReturn<TSignature>) {
     return this.mapReturnValue<MethodReturn<TSignature>>(await this.appClient.call(typedCallParams), returnValueFormatter)
   }
 
   /**
-   * Idempotently deploys the ImmutableNew smart contract.
+   * Idempotently deploys the ImmutableV2 smart contract.
    *
    * @param params The arguments for the contract calls and any additional parameters for the call
    * @returns The deployment result
    */
-  public deploy(params: ImmutableNewDeployArgs & AppClientDeployCoreParams = {}): ReturnType<ApplicationClient['deploy']> {
-    const createArgs = params.createCall?.(ImmutableNewCallFactory.create)
+  public deploy(params: ImmutableV2DeployArgs & AppClientDeployCoreParams = {}): ReturnType<ApplicationClient['deploy']> {
+    const createArgs = params.createCall?.(ImmutableV2CallFactory.create)
     return this.appClient.deploy({
       ...params,
       createArgs,
@@ -397,20 +397,20 @@ export class ImmutableNewClient {
     const $this = this
     return {
       /**
-       * Creates a new instance of the ImmutableNew smart contract using the createApplication()void ABI method.
+       * Creates a new instance of the ImmutableV2 smart contract using the createApplication()void ABI method.
        *
        * @param args The arguments for the smart contract call
        * @param params Any additional parameters for the call
        * @returns The create result
        */
       async createApplication(args: MethodArgs<'createApplication()void'>, params: AppClientCallCoreParams & AppClientCompilationParams & (OnCompleteNoOp) = {}): Promise<AppCallTransactionResultOfType<MethodReturn<'createApplication()void'>>> {
-        return $this.mapReturnValue(await $this.appClient.create(ImmutableNewCallFactory.create.createApplication(args, params)))
+        return $this.mapReturnValue(await $this.appClient.create(ImmutableV2CallFactory.create.createApplication(args, params)))
       },
     }
   }
 
   /**
-   * Makes a clear_state call to an existing instance of the ImmutableNew smart contract.
+   * Makes a clear_state call to an existing instance of the ImmutableV2 smart contract.
    *
    * @param args The arguments for the bare call
    * @returns The clear_state result
@@ -427,7 +427,7 @@ export class ImmutableNewClient {
    * @returns The result of the call
    */
   public setSourceApplication(args: MethodArgs<'setSourceApplication(application)void'>, params: AppClientCallCoreParams & CoreAppCallArgs = {}) {
-    return this.call(ImmutableNewCallFactory.setSourceApplication(args, params))
+    return this.call(ImmutableV2CallFactory.setSourceApplication(args, params))
   }
 
   /**
@@ -438,7 +438,7 @@ export class ImmutableNewClient {
    * @returns The result of the call
    */
   public sum(args: MethodArgs<'sum(uint64,uint64,application)uint64'>, params: AppClientCallCoreParams & CoreAppCallArgs = {}) {
-    return this.call(ImmutableNewCallFactory.sum(args, params))
+    return this.call(ImmutableV2CallFactory.sum(args, params))
   }
 
   /**
@@ -488,16 +488,16 @@ export class ImmutableNewClient {
   /**
    * Returns the smart contract's global state wrapped in a strongly typed accessor with options to format the stored value
    */
-  public async getGlobalState(): Promise<ImmutableNew['state']['global']> {
+  public async getGlobalState(): Promise<ImmutableV2['state']['global']> {
     const state = await this.appClient.getGlobalState()
     return {
       get sourceApplication() {
-        return ImmutableNewClient.getIntegerState(state, 'sourceApplication')
+        return ImmutableV2Client.getIntegerState(state, 'sourceApplication')
       },
     }
   }
 
-  public compose(): ImmutableNewComposer {
+  public compose(): ImmutableV2Composer {
     const client = this
     const atc = new AtomicTransactionComposer()
     let promiseChain:Promise<unknown> = Promise.resolve()
@@ -534,10 +534,10 @@ export class ImmutableNewClient {
           returns: result.returns?.map((val, i) => resultMappers[i] !== undefined ? resultMappers[i]!(val.returnValue) : val.returnValue)
         }
       }
-    } as unknown as ImmutableNewComposer
+    } as unknown as ImmutableV2Composer
   }
 }
-export type ImmutableNewComposer<TReturns extends [...any[]] = []> = {
+export type ImmutableV2Composer<TReturns extends [...any[]] = []> = {
   /**
    * Calls the setSourceApplication(application)void ABI method.
    *
@@ -545,7 +545,7 @@ export type ImmutableNewComposer<TReturns extends [...any[]] = []> = {
    * @param params Any additional parameters for the call
    * @returns The typed transaction composer so you can fluently chain multiple calls or call execute to execute all queued up transactions
    */
-  setSourceApplication(args: MethodArgs<'setSourceApplication(application)void'>, params?: AppClientCallCoreParams & CoreAppCallArgs): ImmutableNewComposer<[...TReturns, MethodReturn<'setSourceApplication(application)void'>]>
+  setSourceApplication(args: MethodArgs<'setSourceApplication(application)void'>, params?: AppClientCallCoreParams & CoreAppCallArgs): ImmutableV2Composer<[...TReturns, MethodReturn<'setSourceApplication(application)void'>]>
 
   /**
    * Calls the sum(uint64,uint64,application)uint64 ABI method.
@@ -554,15 +554,15 @@ export type ImmutableNewComposer<TReturns extends [...any[]] = []> = {
    * @param params Any additional parameters for the call
    * @returns The typed transaction composer so you can fluently chain multiple calls or call execute to execute all queued up transactions
    */
-  sum(args: MethodArgs<'sum(uint64,uint64,application)uint64'>, params?: AppClientCallCoreParams & CoreAppCallArgs): ImmutableNewComposer<[...TReturns, MethodReturn<'sum(uint64,uint64,application)uint64'>]>
+  sum(args: MethodArgs<'sum(uint64,uint64,application)uint64'>, params?: AppClientCallCoreParams & CoreAppCallArgs): ImmutableV2Composer<[...TReturns, MethodReturn<'sum(uint64,uint64,application)uint64'>]>
 
   /**
-   * Makes a clear_state call to an existing instance of the ImmutableNew smart contract.
+   * Makes a clear_state call to an existing instance of the ImmutableV2 smart contract.
    *
    * @param args The arguments for the bare call
    * @returns The typed transaction composer so you can fluently chain multiple calls or call execute to execute all queued up transactions
    */
-  clearState(args?: BareCallArgs & AppClientCallCoreParams & CoreAppCallArgs): ImmutableNewComposer<[...TReturns, undefined]>
+  clearState(args?: BareCallArgs & AppClientCallCoreParams & CoreAppCallArgs): ImmutableV2Composer<[...TReturns, undefined]>
 
   /**
    * Adds a transaction to the composer
@@ -570,7 +570,7 @@ export type ImmutableNewComposer<TReturns extends [...any[]] = []> = {
    * @param txn One of: A TransactionWithSigner object (returned as is), a TransactionToSign object (signer is obtained from the signer property), a Transaction object (signer is extracted from the defaultSender parameter), an async SendTransactionResult returned by one of algokit utils helpers (signer is obtained from the defaultSender parameter)
    * @param defaultSender The default sender to be used to obtain a signer where the object provided to the transaction parameter does not include a signer.
    */
-  addTransaction(txn: TransactionWithSigner | TransactionToSign | Transaction | Promise<SendTransactionResult>, defaultSender?: SendTransactionFrom): ImmutableNewComposer<TReturns>
+  addTransaction(txn: TransactionWithSigner | TransactionToSign | Transaction | Promise<SendTransactionResult>, defaultSender?: SendTransactionFrom): ImmutableV2Composer<TReturns>
   /**
    * Returns the underlying AtomicTransactionComposer instance
    */
@@ -578,9 +578,9 @@ export type ImmutableNewComposer<TReturns extends [...any[]] = []> = {
   /**
    * Executes the transaction group and returns an array of results
    */
-  execute(): Promise<ImmutableNewComposerResults<TReturns>>
+  execute(): Promise<ImmutableV2ComposerResults<TReturns>>
 }
-export type ImmutableNewComposerResults<TReturns extends [...any[]]> = {
+export type ImmutableV2ComposerResults<TReturns extends [...any[]]> = {
   returns: TReturns
   groupId: string
   txIds: string[]

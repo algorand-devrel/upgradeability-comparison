@@ -6,14 +6,14 @@ import algosdk from 'algosdk';
 import { algorandFixture } from '@algorandfoundation/algokit-utils/testing';
 import { microAlgos } from '@algorandfoundation/algokit-utils';
 import { CalculatorProxyClient } from '../contracts/clients/CalculatorProxyClient';
-import { ImmutableOldClient } from '../contracts/clients/ImmutableOldClient';
-import { ImmutableNewClient } from '../contracts/clients/ImmutableNewClient';
+import { ImmutableV1Client } from '../contracts/clients/ImmutableV1Client';
+import { ImmutableV2Client } from '../contracts/clients/ImmutableV2Client';
 
 const fixture = algorandFixture();
 
 let calcPClient: CalculatorProxyClient;
-let immOClient: ImmutableOldClient;
-let immNClient: ImmutableNewClient;
+let immOClient: ImmutableV1Client;
+let immNClient: ImmutableV2Client;
 
 describe('ProxyPattern', () => {
   beforeEach(fixture.beforeEach);
@@ -30,7 +30,7 @@ describe('ProxyPattern', () => {
       },
       algod,
     );
-    immOClient = new ImmutableOldClient(
+    immOClient = new ImmutableV1Client(
       {
         sender: testAccount,
         resolveBy: 'id',
@@ -38,7 +38,7 @@ describe('ProxyPattern', () => {
       },
       algod,
     );
-    immNClient = new ImmutableNewClient(
+    immNClient = new ImmutableV2Client(
       {
         sender: testAccount,
         resolveBy: 'id',

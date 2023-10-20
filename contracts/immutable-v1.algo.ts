@@ -1,7 +1,7 @@
 import { Contract } from '@algorandfoundation/tealscript';
 
 // eslint-disable-next-line no-unused-vars
-class ImmutableOld extends Contract {
+class ImmutableV1 extends Contract {
   sourceApplication = GlobalStateKey<Application>();
 
   setSourceApplication(app: Application): void {
