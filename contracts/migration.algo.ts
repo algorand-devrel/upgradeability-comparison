@@ -12,6 +12,16 @@ class Migration extends Contract {
 
   boxBytes = BoxMap<bytes, bytes>();
 
+  migrateASA(asa: Asset): void {
+    sendAssetTransfer({
+      assetSender: this.txn.sender,
+      assetReceiver: this.txn.sender,
+      xferAsset: asa,
+      assetAmount: 0,
+      fee: 0,
+    });
+  }
+
   migrateGlobalInt(key: bytes, value: number): void {
     this.globalInts(key).value = value;
   }
