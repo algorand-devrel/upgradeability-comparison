@@ -75,11 +75,11 @@ export const APP_SPEC: AppSpec = {
     }
   },
   "source": {
-    "approval": "I3ByYWdtYSB2ZXJzaW9uIDkKCi8vIFRoaXMgVEVBTCB3YXMgZ2VuZXJhdGVkIGJ5IFRFQUxTY3JpcHQgdjAuNDcuMAovLyBodHRwczovL2dpdGh1Yi5jb20vYWxnb3JhbmQtZGV2cmVsL1RFQUxTY3JpcHQKCi8vIFRoaXMgY29udHJhY3QgaXMgY29tcGxpYW50IHdpdGggYW5kL29yIGltcGxlbWVudHMgdGhlIGZvbGxvd2luZyBBUkNzOiBbIEFSQzQgXQoKLy8gVGhlIGZvbGxvd2luZyB0ZW4gbGluZXMgb2YgVEVBTCBoYW5kbGUgaW5pdGlhbCBwcm9ncmFtIGZsb3cKLy8gVGhpcyBwYXR0ZXJuIGlzIHVzZWQgdG8gbWFrZSBpdCBlYXN5IGZvciBhbnlvbmUgdG8gcGFyc2UgdGhlIHN0YXJ0IG9mIHRoZSBwcm9ncmFtIGFuZCBkZXRlcm1pbmUgaWYgYSBzcGVjaWZpYyBhY3Rpb24gaXMgYWxsb3dlZAovLyBIZXJlLCBhY3Rpb24gcmVmZXJzIHRvIHRoZSBPbkNvbXBsZXRlIGluIGNvbWJpbmF0aW9uIHdpdGggd2hldGhlciB0aGUgYXBwIGlzIGJlaW5nIGNyZWF0ZWQgb3IgY2FsbGVkCi8vIEV2ZXJ5IHBvc3NpYmxlIGFjdGlvbiBmb3IgdGhpcyBjb250cmFjdCBpcyByZXByZXNlbnRlZCBpbiB0aGUgc3dpdGNoIHN0YXRlbWVudAovLyBJZiB0aGUgYWN0aW9uIGlzIG5vdCBpbXBsbWVudGVkIGluIHRoZSBjb250cmFjdCwgaXRzIHJlcHNlY3RpdmUgYnJhbmNoIHdpbGwgYmUgIk5PVF9JTVBMTUVOVEVEIiB3aGljaCBqdXN0IGNvbnRhaW5zICJlcnIiCnR4biBBcHBsaWNhdGlvbklECmludCAwCj4KaW50IDYKKgp0eG4gT25Db21wbGV0aW9uCisKc3dpdGNoIGNyZWF0ZV9Ob09wIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgTk9UX0lNUExFTUVOVEVEIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgY2FsbF9Ob09wCgpOT1RfSU1QTEVNRU5URUQ6CgllcnIKCi8vIHNldFRhcmdldEFwcGxpY2F0aW9uKGFwcGxpY2F0aW9uKXZvaWQKYWJpX3JvdXRlX3NldFRhcmdldEFwcGxpY2F0aW9uOgoJLy8gYXBwOiBhcHBsaWNhdGlvbgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQoJYnRvaQoJdHhuYXMgQXBwbGljYXRpb25zCgoJLy8gZXhlY3V0ZSBzZXRUYXJnZXRBcHBsaWNhdGlvbihhcHBsaWNhdGlvbil2b2lkCgljYWxsc3ViIHNldFRhcmdldEFwcGxpY2F0aW9uCglpbnQgMQoJcmV0dXJuCgpzZXRUYXJnZXRBcHBsaWNhdGlvbjoKCXByb3RvIDEgMAoKCS8vIGNvbnRyYWN0cy9jYWxjdWxhdG9yLXByb3h5LmFsZ28udHM6OAoJLy8gYXNzZXJ0KHRoaXMudHhuLnNlbmRlciA9PT0gdGhpcy5hcHAuY3JlYXRvcikKCXR4biBTZW5kZXIKCXR4bmEgQXBwbGljYXRpb25zIDAKCWFwcF9wYXJhbXNfZ2V0IEFwcENyZWF0b3IKCWFzc2VydAoJPT0KCWFzc2VydAoKCS8vIGNvbnRyYWN0cy9jYWxjdWxhdG9yLXByb3h5LmFsZ28udHM6OQoJLy8gdGhpcy50YXJnZXRBcHBsaWNhdGlvbi52YWx1ZSA9IGFwcAoJYnl0ZSAidGFyZ2V0QXBwbGljYXRpb24iCglmcmFtZV9kaWcgLTEgLy8gYXBwOiBhcHBsaWNhdGlvbgoJYXBwX2dsb2JhbF9wdXQKCXJldHN1YgoKLy8gc3VtKGFwcGxpY2F0aW9uLHVpbnQ2NCx1aW50NjQpdWludDY0Ci8vCi8vIC8vIGVzbGludC1kaXNhYmxlLW5leHQtbGluZSBuby11bnVzZWQtdmFycwphYmlfcm91dGVfc3VtOgoJLy8gdGFyZ2V0QXBwOiBhcHBsaWNhdGlvbgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMwoJYnRvaQoJdHhuYXMgQXBwbGljYXRpb25zCgoJLy8gYjogdWludDY0Cgl0eG5hIEFwcGxpY2F0aW9uQXJncyAyCglidG9pCgoJLy8gYTogdWludDY0Cgl0eG5hIEFwcGxpY2F0aW9uQXJncyAxCglidG9pCgoJLy8gZXhlY3V0ZSBzdW0oYXBwbGljYXRpb24sdWludDY0LHVpbnQ2NCl1aW50NjQKCWNhbGxzdWIgc3VtCglpbnQgMQoJcmV0dXJuCgpzdW06Cglwcm90byAzIDAKCgkvLyBjb250cmFjdHMvY2FsY3VsYXRvci1wcm94eS5hbGdvLnRzOjE0CgkvLyByZXR1cm4gc2VuZE1ldGhvZENhbGw8W251bWJlciwgbnVtYmVyLCBBcHBsaWNhdGlvbl0sIHVpbnQ2ND4oewoJLy8gICAgICAgYXBwbGljYXRpb25JRDogdGhpcy50YXJnZXRBcHBsaWNhdGlvbi52YWx1ZSwKCS8vICAgICAgIG5hbWU6ICdzdW0nLAoJLy8gICAgICAgbWV0aG9kQXJnczogW2EsIGIsIHRoaXMuYXBwXSwKCS8vICAgICB9KTsKCWl0eG5fYmVnaW4KCWludCBhcHBsCglpdHhuX2ZpZWxkIFR5cGVFbnVtCgltZXRob2QgInN1bSh1aW50NjQsdWludDY0LGFwcGxpY2F0aW9uKXVpbnQ2NCIKCWl0eG5fZmllbGQgQXBwbGljYXRpb25BcmdzCgoJLy8gY29udHJhY3RzL2NhbGN1bGF0b3ItcHJveHkuYWxnby50czoxNQoJLy8gYXBwbGljYXRpb25JRDogdGhpcy50YXJnZXRBcHBsaWNhdGlvbi52YWx1ZQoJYnl0ZSAidGFyZ2V0QXBwbGljYXRpb24iCglhcHBfZ2xvYmFsX2dldAoJaXR4bl9maWVsZCBBcHBsaWNhdGlvbklECgoJLy8gY29udHJhY3RzL2NhbGN1bGF0b3ItcHJveHkuYWxnby50czoxNwoJLy8gbWV0aG9kQXJnczogW2EsIGIsIHRoaXMuYXBwXQoJZnJhbWVfZGlnIC0xIC8vIGE6IHVpbnQ2NAoJaXRvYgoJaXR4bl9maWVsZCBBcHBsaWNhdGlvbkFyZ3MKCWZyYW1lX2RpZyAtMiAvLyBiOiB1aW50NjQKCWl0b2IKCWl0eG5fZmllbGQgQXBwbGljYXRpb25BcmdzCgl0eG5hIEFwcGxpY2F0aW9ucyAwCglpdHhuX2ZpZWxkIEFwcGxpY2F0aW9ucwoJYnl0ZSAweDAwMDAwMDAwMDAwMDAwMDEKCWl0eG5fZmllbGQgQXBwbGljYXRpb25BcmdzCgoJLy8gRmVlIGZpZWxkIG5vdCBzZXQsIGRlZmF1bHRpbmcgdG8gMAoJaW50IDAKCWl0eG5fZmllbGQgRmVlCgoJLy8gU3VibWl0IGlubmVyIHRyYW5zYWN0aW9uCglpdHhuX3N1Ym1pdAoJaXR4biBOdW1Mb2dzCglpbnQgMQoJLQoJaXR4bmFzIExvZ3MKCWV4dHJhY3QgNCAwCglidG9pCglpdG9iCglieXRlIDB4MTUxZjdjNzUKCXN3YXAKCWNvbmNhdAoJbG9nCglyZXRzdWIKCmFiaV9yb3V0ZV9jcmVhdGVBcHBsaWNhdGlvbjoKCWludCAxCglyZXR1cm4KCmNyZWF0ZV9Ob09wOgoJbWV0aG9kICJjcmVhdGVBcHBsaWNhdGlvbigpdm9pZCIKCXR4bmEgQXBwbGljYXRpb25BcmdzIDAKCW1hdGNoIGFiaV9yb3V0ZV9jcmVhdGVBcHBsaWNhdGlvbgoJZXJyCgpjYWxsX05vT3A6CgltZXRob2QgInNldFRhcmdldEFwcGxpY2F0aW9uKGFwcGxpY2F0aW9uKXZvaWQiCgltZXRob2QgInN1bSh1aW50NjQsdWludDY0LGFwcGxpY2F0aW9uKXVpbnQ2NCIKCXR4bmEgQXBwbGljYXRpb25BcmdzIDAKCW1hdGNoIGFiaV9yb3V0ZV9zZXRUYXJnZXRBcHBsaWNhdGlvbiBhYmlfcm91dGVfc3VtCgllcnI=",
+    "approval": "I3ByYWdtYSB2ZXJzaW9uIDkKCi8vIFRoaXMgVEVBTCB3YXMgZ2VuZXJhdGVkIGJ5IFRFQUxTY3JpcHQgdjAuNDcuMAovLyBodHRwczovL2dpdGh1Yi5jb20vYWxnb3JhbmQtZGV2cmVsL1RFQUxTY3JpcHQKCi8vIFRoaXMgY29udHJhY3QgaXMgY29tcGxpYW50IHdpdGggYW5kL29yIGltcGxlbWVudHMgdGhlIGZvbGxvd2luZyBBUkNzOiBbIEFSQzQgXQoKLy8gVGhlIGZvbGxvd2luZyB0ZW4gbGluZXMgb2YgVEVBTCBoYW5kbGUgaW5pdGlhbCBwcm9ncmFtIGZsb3cKLy8gVGhpcyBwYXR0ZXJuIGlzIHVzZWQgdG8gbWFrZSBpdCBlYXN5IGZvciBhbnlvbmUgdG8gcGFyc2UgdGhlIHN0YXJ0IG9mIHRoZSBwcm9ncmFtIGFuZCBkZXRlcm1pbmUgaWYgYSBzcGVjaWZpYyBhY3Rpb24gaXMgYWxsb3dlZAovLyBIZXJlLCBhY3Rpb24gcmVmZXJzIHRvIHRoZSBPbkNvbXBsZXRlIGluIGNvbWJpbmF0aW9uIHdpdGggd2hldGhlciB0aGUgYXBwIGlzIGJlaW5nIGNyZWF0ZWQgb3IgY2FsbGVkCi8vIEV2ZXJ5IHBvc3NpYmxlIGFjdGlvbiBmb3IgdGhpcyBjb250cmFjdCBpcyByZXByZXNlbnRlZCBpbiB0aGUgc3dpdGNoIHN0YXRlbWVudAovLyBJZiB0aGUgYWN0aW9uIGlzIG5vdCBpbXBsbWVudGVkIGluIHRoZSBjb250cmFjdCwgaXRzIHJlcHNlY3RpdmUgYnJhbmNoIHdpbGwgYmUgIk5PVF9JTVBMTUVOVEVEIiB3aGljaCBqdXN0IGNvbnRhaW5zICJlcnIiCnR4biBBcHBsaWNhdGlvbklECmludCAwCj4KaW50IDYKKgp0eG4gT25Db21wbGV0aW9uCisKc3dpdGNoIGNyZWF0ZV9Ob09wIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgTk9UX0lNUExFTUVOVEVEIE5PVF9JTVBMRU1FTlRFRCBOT1RfSU1QTEVNRU5URUQgY2FsbF9Ob09wCgpOT1RfSU1QTEVNRU5URUQ6CgllcnIKCi8vIHNldFRhcmdldEFwcGxpY2F0aW9uKGFwcGxpY2F0aW9uKXZvaWQKYWJpX3JvdXRlX3NldFRhcmdldEFwcGxpY2F0aW9uOgoJLy8gYXBwOiBhcHBsaWNhdGlvbgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQoJYnRvaQoJdHhuYXMgQXBwbGljYXRpb25zCgoJLy8gZXhlY3V0ZSBzZXRUYXJnZXRBcHBsaWNhdGlvbihhcHBsaWNhdGlvbil2b2lkCgljYWxsc3ViIHNldFRhcmdldEFwcGxpY2F0aW9uCglpbnQgMQoJcmV0dXJuCgpzZXRUYXJnZXRBcHBsaWNhdGlvbjoKCXByb3RvIDEgMAoKCS8vIGNvbnRyYWN0cy9jYWxjdWxhdG9yLXByb3h5LXYxLmFsZ28udHM6OAoJLy8gYXNzZXJ0KHRoaXMudHhuLnNlbmRlciA9PT0gdGhpcy5hcHAuY3JlYXRvcikKCXR4biBTZW5kZXIKCXR4bmEgQXBwbGljYXRpb25zIDAKCWFwcF9wYXJhbXNfZ2V0IEFwcENyZWF0b3IKCWFzc2VydAoJPT0KCWFzc2VydAoKCS8vIGNvbnRyYWN0cy9jYWxjdWxhdG9yLXByb3h5LXYxLmFsZ28udHM6OQoJLy8gdGhpcy50YXJnZXRBcHBsaWNhdGlvbi52YWx1ZSA9IGFwcAoJYnl0ZSAidGFyZ2V0QXBwbGljYXRpb24iCglmcmFtZV9kaWcgLTEgLy8gYXBwOiBhcHBsaWNhdGlvbgoJYXBwX2dsb2JhbF9wdXQKCXJldHN1YgoKLy8gc3VtKGFwcGxpY2F0aW9uLHVpbnQ2NCx1aW50NjQpdWludDY0Ci8vCi8vIC8vIGVzbGludC1kaXNhYmxlLW5leHQtbGluZSBuby11bnVzZWQtdmFycwphYmlfcm91dGVfc3VtOgoJLy8gdGFyZ2V0QXBwOiBhcHBsaWNhdGlvbgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMwoJYnRvaQoJdHhuYXMgQXBwbGljYXRpb25zCgoJLy8gYjogdWludDY0Cgl0eG5hIEFwcGxpY2F0aW9uQXJncyAyCglidG9pCgoJLy8gYTogdWludDY0Cgl0eG5hIEFwcGxpY2F0aW9uQXJncyAxCglidG9pCgoJLy8gZXhlY3V0ZSBzdW0oYXBwbGljYXRpb24sdWludDY0LHVpbnQ2NCl1aW50NjQKCWNhbGxzdWIgc3VtCglpbnQgMQoJcmV0dXJuCgpzdW06Cglwcm90byAzIDAKCgkvLyBjb250cmFjdHMvY2FsY3VsYXRvci1wcm94eS12MS5hbGdvLnRzOjE0CgkvLyByZXR1cm4gc2VuZE1ldGhvZENhbGw8W251bWJlciwgbnVtYmVyLCBBcHBsaWNhdGlvbl0sIHVpbnQ2ND4oewoJLy8gICAgICAgYXBwbGljYXRpb25JRDogdGhpcy50YXJnZXRBcHBsaWNhdGlvbi52YWx1ZSwKCS8vICAgICAgIG5hbWU6ICdzdW0nLAoJLy8gICAgICAgbWV0aG9kQXJnczogW2EsIGIsIHRoaXMuYXBwXSwKCS8vICAgICB9KTsKCWl0eG5fYmVnaW4KCWludCBhcHBsCglpdHhuX2ZpZWxkIFR5cGVFbnVtCgltZXRob2QgInN1bSh1aW50NjQsdWludDY0LGFwcGxpY2F0aW9uKXVpbnQ2NCIKCWl0eG5fZmllbGQgQXBwbGljYXRpb25BcmdzCgoJLy8gY29udHJhY3RzL2NhbGN1bGF0b3ItcHJveHktdjEuYWxnby50czoxNQoJLy8gYXBwbGljYXRpb25JRDogdGhpcy50YXJnZXRBcHBsaWNhdGlvbi52YWx1ZQoJYnl0ZSAidGFyZ2V0QXBwbGljYXRpb24iCglhcHBfZ2xvYmFsX2dldAoJaXR4bl9maWVsZCBBcHBsaWNhdGlvbklECgoJLy8gY29udHJhY3RzL2NhbGN1bGF0b3ItcHJveHktdjEuYWxnby50czoxNwoJLy8gbWV0aG9kQXJnczogW2EsIGIsIHRoaXMuYXBwXQoJZnJhbWVfZGlnIC0xIC8vIGE6IHVpbnQ2NAoJaXRvYgoJaXR4bl9maWVsZCBBcHBsaWNhdGlvbkFyZ3MKCWZyYW1lX2RpZyAtMiAvLyBiOiB1aW50NjQKCWl0b2IKCWl0eG5fZmllbGQgQXBwbGljYXRpb25BcmdzCgl0eG5hIEFwcGxpY2F0aW9ucyAwCglpdHhuX2ZpZWxkIEFwcGxpY2F0aW9ucwoJYnl0ZSAweDAwMDAwMDAwMDAwMDAwMDEKCWl0eG5fZmllbGQgQXBwbGljYXRpb25BcmdzCgoJLy8gRmVlIGZpZWxkIG5vdCBzZXQsIGRlZmF1bHRpbmcgdG8gMAoJaW50IDAKCWl0eG5fZmllbGQgRmVlCgoJLy8gU3VibWl0IGlubmVyIHRyYW5zYWN0aW9uCglpdHhuX3N1Ym1pdAoJaXR4biBOdW1Mb2dzCglpbnQgMQoJLQoJaXR4bmFzIExvZ3MKCWV4dHJhY3QgNCAwCglidG9pCglpdG9iCglieXRlIDB4MTUxZjdjNzUKCXN3YXAKCWNvbmNhdAoJbG9nCglyZXRzdWIKCmFiaV9yb3V0ZV9jcmVhdGVBcHBsaWNhdGlvbjoKCWludCAxCglyZXR1cm4KCmNyZWF0ZV9Ob09wOgoJbWV0aG9kICJjcmVhdGVBcHBsaWNhdGlvbigpdm9pZCIKCXR4bmEgQXBwbGljYXRpb25BcmdzIDAKCW1hdGNoIGFiaV9yb3V0ZV9jcmVhdGVBcHBsaWNhdGlvbgoJZXJyCgpjYWxsX05vT3A6CgltZXRob2QgInNldFRhcmdldEFwcGxpY2F0aW9uKGFwcGxpY2F0aW9uKXZvaWQiCgltZXRob2QgInN1bSh1aW50NjQsdWludDY0LGFwcGxpY2F0aW9uKXVpbnQ2NCIKCXR4bmEgQXBwbGljYXRpb25BcmdzIDAKCW1hdGNoIGFiaV9yb3V0ZV9zZXRUYXJnZXRBcHBsaWNhdGlvbiBhYmlfcm91dGVfc3VtCgllcnI=",
     "clear": "I3ByYWdtYSB2ZXJzaW9uIDkKaW50IDE="
   },
   "contract": {
-    "name": "CalculatorProxy",
+    "name": "CalculatorProxyV1",
     "desc": "",
     "methods": [
       {
@@ -183,9 +183,9 @@ export type BinaryState = {
 }
 
 /**
- * Defines the types of available calls and state of the CalculatorProxy smart contract.
+ * Defines the types of available calls and state of the CalculatorProxyV1 smart contract.
  */
-export type CalculatorProxy = {
+export type CalculatorProxyV1 = {
   /**
    * Maps method signatures / names to their argument and return types.
    */
@@ -224,11 +224,11 @@ export type CalculatorProxy = {
 /**
  * Defines the possible abi call signatures
  */
-export type CalculatorProxySig = keyof CalculatorProxy['methods']
+export type CalculatorProxyV1Sig = keyof CalculatorProxyV1['methods']
 /**
  * Defines an object containing all relevant parameters for a single call to the contract. Where TSignature is undefined, a bare call is made
  */
-export type TypedCallParams<TSignature extends CalculatorProxySig | undefined> = {
+export type TypedCallParams<TSignature extends CalculatorProxyV1Sig | undefined> = {
   method: TSignature
   methodArgs: TSignature extends undefined ? undefined : Array<ABIAppCallArg | undefined>
 } & AppClientCallCoreParams & CoreAppCallArgs
@@ -237,46 +237,46 @@ export type TypedCallParams<TSignature extends CalculatorProxySig | undefined> =
  */
 export type BareCallArgs = Omit<RawAppCallArgs, keyof CoreAppCallArgs>
 /**
- * Maps a method signature from the CalculatorProxy smart contract to the method's arguments in either tuple of struct form
+ * Maps a method signature from the CalculatorProxyV1 smart contract to the method's arguments in either tuple of struct form
  */
-export type MethodArgs<TSignature extends CalculatorProxySig> = CalculatorProxy['methods'][TSignature]['argsObj' | 'argsTuple']
+export type MethodArgs<TSignature extends CalculatorProxyV1Sig> = CalculatorProxyV1['methods'][TSignature]['argsObj' | 'argsTuple']
 /**
- * Maps a method signature from the CalculatorProxy smart contract to the method's return type
+ * Maps a method signature from the CalculatorProxyV1 smart contract to the method's return type
  */
-export type MethodReturn<TSignature extends CalculatorProxySig> = CalculatorProxy['methods'][TSignature]['returns']
+export type MethodReturn<TSignature extends CalculatorProxyV1Sig> = CalculatorProxyV1['methods'][TSignature]['returns']
 
 /**
  * A factory for available 'create' calls
  */
-export type CalculatorProxyCreateCalls = (typeof CalculatorProxyCallFactory)['create']
+export type CalculatorProxyV1CreateCalls = (typeof CalculatorProxyV1CallFactory)['create']
 /**
  * Defines supported create methods for this smart contract
  */
-export type CalculatorProxyCreateCallParams =
+export type CalculatorProxyV1CreateCallParams =
   | (TypedCallParams<'createApplication()void'> & (OnCompleteNoOp))
 /**
  * Defines arguments required for the deploy method.
  */
-export type CalculatorProxyDeployArgs = {
+export type CalculatorProxyV1DeployArgs = {
   deployTimeParams?: TealTemplateParams
   /**
    * A delegate which takes a create call factory and returns the create call params for this smart contract
    */
-  createCall?: (callFactory: CalculatorProxyCreateCalls) => CalculatorProxyCreateCallParams
+  createCall?: (callFactory: CalculatorProxyV1CreateCalls) => CalculatorProxyV1CreateCallParams
 }
 
 
 /**
  * Exposes methods for constructing all available smart contract calls
  */
-export abstract class CalculatorProxyCallFactory {
+export abstract class CalculatorProxyV1CallFactory {
   /**
    * Gets available create call factories
    */
   static get create() {
     return {
       /**
-       * Constructs a create call for the CalculatorProxy smart contract using the createApplication()void ABI method
+       * Constructs a create call for the CalculatorProxyV1 smart contract using the createApplication()void ABI method
        *
        * @param args Any args for the contract call
        * @param params Any additional parameters for the call
@@ -323,9 +323,9 @@ export abstract class CalculatorProxyCallFactory {
 }
 
 /**
- * A client to make calls to the CalculatorProxy smart contract
+ * A client to make calls to the CalculatorProxyV1 smart contract
  */
-export class CalculatorProxyClient {
+export class CalculatorProxyV1Client {
   /**
    * The underlying `ApplicationClient` for when you want to have more flexibility
    */
@@ -334,7 +334,7 @@ export class CalculatorProxyClient {
   private readonly sender: SendTransactionFrom | undefined
 
   /**
-   * Creates a new instance of `CalculatorProxyClient`
+   * Creates a new instance of `CalculatorProxyV1Client`
    *
    * @param appDetails appDetails The details to identify the app to deploy
    * @param algod An algod client instance
@@ -371,18 +371,18 @@ export class CalculatorProxyClient {
    * @param returnValueFormatter An optional delegate which when provided will be used to map non-undefined return values to the target type
    * @returns The result of the smart contract call
    */
-  public async call<TSignature extends keyof CalculatorProxy['methods']>(typedCallParams: TypedCallParams<TSignature>, returnValueFormatter?: (value: any) => MethodReturn<TSignature>) {
+  public async call<TSignature extends keyof CalculatorProxyV1['methods']>(typedCallParams: TypedCallParams<TSignature>, returnValueFormatter?: (value: any) => MethodReturn<TSignature>) {
     return this.mapReturnValue<MethodReturn<TSignature>>(await this.appClient.call(typedCallParams), returnValueFormatter)
   }
 
   /**
-   * Idempotently deploys the CalculatorProxy smart contract.
+   * Idempotently deploys the CalculatorProxyV1 smart contract.
    *
    * @param params The arguments for the contract calls and any additional parameters for the call
    * @returns The deployment result
    */
-  public deploy(params: CalculatorProxyDeployArgs & AppClientDeployCoreParams = {}): ReturnType<ApplicationClient['deploy']> {
-    const createArgs = params.createCall?.(CalculatorProxyCallFactory.create)
+  public deploy(params: CalculatorProxyV1DeployArgs & AppClientDeployCoreParams = {}): ReturnType<ApplicationClient['deploy']> {
+    const createArgs = params.createCall?.(CalculatorProxyV1CallFactory.create)
     return this.appClient.deploy({
       ...params,
       createArgs,
@@ -397,20 +397,20 @@ export class CalculatorProxyClient {
     const $this = this
     return {
       /**
-       * Creates a new instance of the CalculatorProxy smart contract using the createApplication()void ABI method.
+       * Creates a new instance of the CalculatorProxyV1 smart contract using the createApplication()void ABI method.
        *
        * @param args The arguments for the smart contract call
        * @param params Any additional parameters for the call
        * @returns The create result
        */
       async createApplication(args: MethodArgs<'createApplication()void'>, params: AppClientCallCoreParams & AppClientCompilationParams & (OnCompleteNoOp) = {}): Promise<AppCallTransactionResultOfType<MethodReturn<'createApplication()void'>>> {
-        return $this.mapReturnValue(await $this.appClient.create(CalculatorProxyCallFactory.create.createApplication(args, params)))
+        return $this.mapReturnValue(await $this.appClient.create(CalculatorProxyV1CallFactory.create.createApplication(args, params)))
       },
     }
   }
 
   /**
-   * Makes a clear_state call to an existing instance of the CalculatorProxy smart contract.
+   * Makes a clear_state call to an existing instance of the CalculatorProxyV1 smart contract.
    *
    * @param args The arguments for the bare call
    * @returns The clear_state result
@@ -427,7 +427,7 @@ export class CalculatorProxyClient {
    * @returns The result of the call
    */
   public setTargetApplication(args: MethodArgs<'setTargetApplication(application)void'>, params: AppClientCallCoreParams & CoreAppCallArgs = {}) {
-    return this.call(CalculatorProxyCallFactory.setTargetApplication(args, params))
+    return this.call(CalculatorProxyV1CallFactory.setTargetApplication(args, params))
   }
 
   /**
@@ -438,7 +438,7 @@ export class CalculatorProxyClient {
    * @returns The result of the call
    */
   public sum(args: MethodArgs<'sum(uint64,uint64,application)uint64'>, params: AppClientCallCoreParams & CoreAppCallArgs = {}) {
-    return this.call(CalculatorProxyCallFactory.sum(args, params))
+    return this.call(CalculatorProxyV1CallFactory.sum(args, params))
   }
 
   /**
@@ -488,16 +488,16 @@ export class CalculatorProxyClient {
   /**
    * Returns the smart contract's global state wrapped in a strongly typed accessor with options to format the stored value
    */
-  public async getGlobalState(): Promise<CalculatorProxy['state']['global']> {
+  public async getGlobalState(): Promise<CalculatorProxyV1['state']['global']> {
     const state = await this.appClient.getGlobalState()
     return {
       get targetApplication() {
-        return CalculatorProxyClient.getIntegerState(state, 'targetApplication')
+        return CalculatorProxyV1Client.getIntegerState(state, 'targetApplication')
       },
     }
   }
 
-  public compose(): CalculatorProxyComposer {
+  public compose(): CalculatorProxyV1Composer {
     const client = this
     const atc = new AtomicTransactionComposer()
     let promiseChain:Promise<unknown> = Promise.resolve()
@@ -534,10 +534,10 @@ export class CalculatorProxyClient {
           returns: result.returns?.map((val, i) => resultMappers[i] !== undefined ? resultMappers[i]!(val.returnValue) : val.returnValue)
         }
       }
-    } as unknown as CalculatorProxyComposer
+    } as unknown as CalculatorProxyV1Composer
   }
 }
-export type CalculatorProxyComposer<TReturns extends [...any[]] = []> = {
+export type CalculatorProxyV1Composer<TReturns extends [...any[]] = []> = {
   /**
    * Calls the setTargetApplication(application)void ABI method.
    *
@@ -545,7 +545,7 @@ export type CalculatorProxyComposer<TReturns extends [...any[]] = []> = {
    * @param params Any additional parameters for the call
    * @returns The typed transaction composer so you can fluently chain multiple calls or call execute to execute all queued up transactions
    */
-  setTargetApplication(args: MethodArgs<'setTargetApplication(application)void'>, params?: AppClientCallCoreParams & CoreAppCallArgs): CalculatorProxyComposer<[...TReturns, MethodReturn<'setTargetApplication(application)void'>]>
+  setTargetApplication(args: MethodArgs<'setTargetApplication(application)void'>, params?: AppClientCallCoreParams & CoreAppCallArgs): CalculatorProxyV1Composer<[...TReturns, MethodReturn<'setTargetApplication(application)void'>]>
 
   /**
    * Calls the sum(uint64,uint64,application)uint64 ABI method.
@@ -554,15 +554,15 @@ export type CalculatorProxyComposer<TReturns extends [...any[]] = []> = {
    * @param params Any additional parameters for the call
    * @returns The typed transaction composer so you can fluently chain multiple calls or call execute to execute all queued up transactions
    */
-  sum(args: MethodArgs<'sum(uint64,uint64,application)uint64'>, params?: AppClientCallCoreParams & CoreAppCallArgs): CalculatorProxyComposer<[...TReturns, MethodReturn<'sum(uint64,uint64,application)uint64'>]>
+  sum(args: MethodArgs<'sum(uint64,uint64,application)uint64'>, params?: AppClientCallCoreParams & CoreAppCallArgs): CalculatorProxyV1Composer<[...TReturns, MethodReturn<'sum(uint64,uint64,application)uint64'>]>
 
   /**
-   * Makes a clear_state call to an existing instance of the CalculatorProxy smart contract.
+   * Makes a clear_state call to an existing instance of the CalculatorProxyV1 smart contract.
    *
    * @param args The arguments for the bare call
    * @returns The typed transaction composer so you can fluently chain multiple calls or call execute to execute all queued up transactions
    */
-  clearState(args?: BareCallArgs & AppClientCallCoreParams & CoreAppCallArgs): CalculatorProxyComposer<[...TReturns, undefined]>
+  clearState(args?: BareCallArgs & AppClientCallCoreParams & CoreAppCallArgs): CalculatorProxyV1Composer<[...TReturns, undefined]>
 
   /**
    * Adds a transaction to the composer
@@ -570,7 +570,7 @@ export type CalculatorProxyComposer<TReturns extends [...any[]] = []> = {
    * @param txn One of: A TransactionWithSigner object (returned as is), a TransactionToSign object (signer is obtained from the signer property), a Transaction object (signer is extracted from the defaultSender parameter), an async SendTransactionResult returned by one of algokit utils helpers (signer is obtained from the defaultSender parameter)
    * @param defaultSender The default sender to be used to obtain a signer where the object provided to the transaction parameter does not include a signer.
    */
-  addTransaction(txn: TransactionWithSigner | TransactionToSign | Transaction | Promise<SendTransactionResult>, defaultSender?: SendTransactionFrom): CalculatorProxyComposer<TReturns>
+  addTransaction(txn: TransactionWithSigner | TransactionToSign | Transaction | Promise<SendTransactionResult>, defaultSender?: SendTransactionFrom): CalculatorProxyV1Composer<TReturns>
   /**
    * Returns the underlying AtomicTransactionComposer instance
    */
@@ -578,9 +578,9 @@ export type CalculatorProxyComposer<TReturns extends [...any[]] = []> = {
   /**
    * Executes the transaction group and returns an array of results
    */
-  execute(): Promise<CalculatorProxyComposerResults<TReturns>>
+  execute(): Promise<CalculatorProxyV1ComposerResults<TReturns>>
 }
-export type CalculatorProxyComposerResults<TReturns extends [...any[]]> = {
+export type CalculatorProxyV1ComposerResults<TReturns extends [...any[]]> = {
   returns: TReturns
   groupId: string
   txIds: string[]

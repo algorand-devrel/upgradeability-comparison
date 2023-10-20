@@ -1,7 +1,7 @@
 import { Contract } from '@algorandfoundation/tealscript';
 
 // eslint-disable-next-line no-unused-vars
-class CalculatorProxy extends Contract {
+class CalculatorProxyV1 extends Contract {
   targetApplication = GlobalStateKey<Application>();
 
   setTargetApplication(app: Application): void {

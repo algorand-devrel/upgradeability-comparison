@@ -5,13 +5,13 @@ import * as algokit from '@algorandfoundation/algokit-utils';
 import algosdk from 'algosdk';
 import { algorandFixture } from '@algorandfoundation/algokit-utils/testing';
 import { microAlgos } from '@algorandfoundation/algokit-utils';
-import { CalculatorProxyClient } from '../contracts/clients/CalculatorProxyClient';
+import { CalculatorProxyV1Client } from '../contracts/clients/CalculatorProxyV1Client';
 import { ImmutableV1Client } from '../contracts/clients/ImmutableV1Client';
 import { ImmutableV2Client } from '../contracts/clients/ImmutableV2Client';
 
 const fixture = algorandFixture();
 
-let calcPClient: CalculatorProxyClient;
+let calcPClient: CalculatorProxyV1Client;
 let immOClient: ImmutableV1Client;
 let immNClient: ImmutableV2Client;
 
@@ -22,7 +22,7 @@ describe('ProxyPattern', () => {
     await fixture.beforeEach();
     const { algod, testAccount } = fixture.context;
 
-    calcPClient = new CalculatorProxyClient(
+    calcPClient = new CalculatorProxyV1Client(
       {
         sender: testAccount,
         resolveBy: 'id',

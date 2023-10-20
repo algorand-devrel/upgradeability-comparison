@@ -37,7 +37,7 @@ abi_route_setTargetApplication:
 setTargetApplication:
 	proto 1 0
 
-	// contracts/calculator-proxy.algo.ts:8
+	// contracts/calculator-proxy-v1.algo.ts:8
 	// assert(this.txn.sender === this.app.creator)
 	txn Sender
 	txna Applications 0
@@ -46,7 +46,7 @@ setTargetApplication:
 	==
 	assert
 
-	// contracts/calculator-proxy.algo.ts:9
+	// contracts/calculator-proxy-v1.algo.ts:9
 	// this.targetApplication.value = app
 	byte "targetApplication"
 	frame_dig -1 // app: application
@@ -78,7 +78,7 @@ abi_route_sum:
 sum:
 	proto 3 0
 
-	// contracts/calculator-proxy.algo.ts:14
+	// contracts/calculator-proxy-v1.algo.ts:14
 	// return sendMethodCall<[number, number, Application], uint64>({
 	//       applicationID: this.targetApplication.value,
 	//       name: 'sum',
@@ -90,13 +90,13 @@ sum:
 	method "sum(uint64,uint64,application)uint64"
 	itxn_field ApplicationArgs
 
-	// contracts/calculator-proxy.algo.ts:15
+	// contracts/calculator-proxy-v1.algo.ts:15
 	// applicationID: this.targetApplication.value
 	byte "targetApplication"
 	app_global_get
 	itxn_field ApplicationID
 
-	// contracts/calculator-proxy.algo.ts:17
+	// contracts/calculator-proxy-v1.algo.ts:17
 	// methodArgs: [a, b, this.app]
 	frame_dig -1 // a: uint64
 	itob
