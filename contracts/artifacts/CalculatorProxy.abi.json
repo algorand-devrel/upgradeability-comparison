@@ -1,0 +1,55 @@
+{
+  "name": "CalculatorProxy",
+  "desc": "",
+  "methods": [
+    {
+      "name": "setTargetApplication",
+      "args": [
+        {
+          "name": "app",
+          "type": "application",
+          "desc": ""
+        }
+      ],
+      "desc": "",
+      "returns": {
+        "type": "void",
+        "desc": ""
+      }
+    },
+    {
+      "name": "sum",
+      "args": [
+        {
+          "name": "a",
+          "type": "uint64",
+          "desc": ""
+        },
+        {
+          "name": "b",
+          "type": "uint64",
+          "desc": ""
+        },
+        {
+          "name": "targetApp",
+          "type": "application",
+          "desc": ""
+        }
+      ],
+      "desc": "",
+      "returns": {
+        "type": "uint64",
+        "desc": ""
+      }
+    },
+    {
+      "name": "createApplication",
+      "desc": "",
+      "returns": {
+        "type": "void",
+        "desc": ""
+      },
+      "args": []
+    }
+  ]
+}
