@@ -1,0 +1,120 @@
+{
+  "name": "ImmutableV4",
+  "desc": "",
+  "methods": [
+    {
+      "name": "setSourceApplication",
+      "args": [
+        {
+          "name": "app",
+          "type": "application",
+          "desc": ""
+        }
+      ],
+      "desc": "",
+      "returns": {
+        "type": "void",
+        "desc": ""
+      }
+    },
+    {
+      "name": "setStorageApplication",
+      "args": [
+        {
+          "name": "app",
+          "type": "application",
+          "desc": ""
+        }
+      ],
+      "desc": "",
+      "returns": {
+        "type": "void",
+        "desc": ""
+      }
+    },
+    {
+      "name": "sum",
+      "args": [
+        {
+          "name": "a",
+          "type": "uint64",
+          "desc": ""
+        },
+        {
+          "name": "b",
+          "type": "uint64",
+          "desc": ""
+        },
+        {
+          "name": "sourceApp",
+          "type": "application",
+          "desc": ""
+        }
+      ],
+      "desc": "",
+      "returns": {
+        "type": "uint64",
+        "desc": ""
+      }
+    },
+    {
+      "name": "sumMR",
+      "args": [
+        {
+          "name": "a",
+          "type": "uint64",
+          "desc": ""
+        },
+        {
+          "name": "sourceApp",
+          "type": "application",
+          "desc": ""
+        },
+        {
+          "name": "storageApp",
+          "type": "application",
+          "desc": ""
+        }
+      ],
+      "desc": "",
+      "returns": {
+        "type": "uint64",
+        "desc": ""
+      }
+    },
+    {
+      "name": "ms",
+      "args": [
+        {
+          "name": "value",
+          "type": "uint64",
+          "desc": ""
+        },
+        {
+          "name": "sourceApp",
+          "type": "application",
+          "desc": ""
+        },
+        {
+          "name": "storageApp",
+          "type": "application",
+          "desc": ""
+        }
+      ],
+      "desc": "",
+      "returns": {
+        "type": "void",
+        "desc": ""
+      }
+    },
+    {
+      "name": "createApplication",
+      "desc": "",
+      "returns": {
+        "type": "void",
+        "desc": ""
+      },
+      "args": []
+    }
+  ]
+}
