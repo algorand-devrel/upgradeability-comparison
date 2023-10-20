@@ -11,7 +11,7 @@ class ImmutableV3 extends Contract {
     this.sourceApplication.value = app;
   }
 
-  setStorage(app: Application): void {
+  setStorageApplication(app: Application): void {
     assert(this.txn.sender === this.app.creator);
     this.storageApplication.value = app;
   }
@@ -23,17 +23,18 @@ class ImmutableV3 extends Contract {
   }
 
   // eslint-disable-next-line no-unused-vars
-  sumMR(a: number, sourceApp: Application, storage: Application): number {
+  sumMR(a: number, sourceApp: Application, storageApp: Application): number {
     assert(this.txn.sender === this.sourceApplication.value.address);
     return a - castBytes<number>(this.storageApplication.value.global('m'));
   }
 
   // eslint-disable-next-line no-unused-vars
-  ms(value: number, storage: Application): void {
-    sendMethodCall<[bytes, number], void>({
+  ms(value: number, sourceApp: Application, storageApp: Application): void {
+    assert(this.txn.sender === this.sourceApplication.value.address);
+    sendMethodCall<[number, Application], void>({
       applicationID: this.storageApplication.value,
-      name: 'setInt',
-      methodArgs: ['m', value],
+      name: 'setMemory',
+      methodArgs: [value, this.app],
     });
   }
 }

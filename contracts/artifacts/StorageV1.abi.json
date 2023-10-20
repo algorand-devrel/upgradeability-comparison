@@ -1,0 +1,50 @@
+{
+  "name": "StorageV1",
+  "desc": "",
+  "methods": [
+    {
+      "name": "setSourceApplication",
+      "args": [
+        {
+          "name": "app",
+          "type": "application",
+          "desc": ""
+        }
+      ],
+      "desc": "",
+      "returns": {
+        "type": "void",
+        "desc": ""
+      }
+    },
+    {
+      "name": "setMemory",
+      "args": [
+        {
+          "name": "value",
+          "type": "uint64",
+          "desc": ""
+        },
+        {
+          "name": "sourceApp",
+          "type": "application",
+          "desc": ""
+        }
+      ],
+      "desc": "",
+      "returns": {
+        "type": "void",
+        "desc": ""
+      }
+    },
+    {
+      "name": "createApplication",
+      "desc": "",
+      "returns": {
+        "type": "void",
+        "desc": ""
+      },
+      "args": []
+    }
+  ]
+}
